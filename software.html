@@ -30,16 +30,75 @@
       <div class="inner clearfix">
         <section id="main-content">
           <!-- <h3>  <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Publications</h3> -->
-          <h3>  <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Under construction</h3>
-          I'll put the links to the software here soon.
+          <h3> Multi-scale shape representation </h3>
+          <img src="images/waveletShapeGraphicalAbstract_small.png" align="middle" style="width:500px;"><br>
+          <!-- <img src="images/waveletShapeGraphicalAbstract_small.png" alt="Multi-scale shape representation and shape based segmentation" style="width:304px;height:228px;"> -->
+          <br>In our project:<br>
 
-          <h3>  <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Contributions to the Open Science</h3>
-	      <ol>
-	        <li><b>Y. Gao</b>, R. Kikinis, and A. Tannenbaum, <i>Robust statistics automatic 3D image segmentation software,</i> As of 2013.4.10, its tutorial pages: <a href="http://www.slicer.org/slicerWiki/index.php/Modules:RobustStatisticsSeg-Documentation-3.6">Version 3.6</a> and <a href="http://www.slicer.org/slicerWiki/index.php/Documentation/4.0/Modules/RobustStatisticsSegmenter">Version 4</a> have over <b>30,100</b> total page accesses. This algorithm is one of the main segmentation module of 3D Slicer, a medical image computing software platform.</li>
-	        <li><b>Y. Gao</b>, D. Nain, X. LeFaucheur, and A. Tannenbaum, <i>Spherical wavelet ITK filter,</i> As of 2012.9.24, this module has <b>4740</b> downloads, ranking <b>6th</b> among all papers in that journal.</li>
-	        <li><b>Y. Gao</b>, J. Melonakos, and A. Tannenbaum, <i>Conformal flattening ITK filter,</i> part of InsightToolkit (ITK) package, <b>1476</b> downloads as of 2012.9.24.</li>
-	        <li><b>Y. Gao</b> and A. Tannenbaum, <i>Left atrium segmentation tool for MR imagery,</i> part of 3D Slicer package.</li>
-	      </ol>
+          <i>``Y. Gao, B. Corn, D. Schifter, and A. Tannenbaum,
+          Multiscale 3D shape representation and segmentation with
+          applications to hippocampal/caudate extraction from brain
+          MRI, Medical Image Analysis, vol. 16, no. 2, pp. 374-385,
+          2012''</i> <br>
+
+          we proposed a multi-scale shape decomosition and
+          reconstruction for 3D shapes of arbitrary topology.  As a
+          bi-product, we release the code for performing 2D and 3D
+          wavelet transformation on ITK images. The source code is
+          hosted on github
+          at <a href="https://github.com/gaoyi/multiScaleShape"
+          rel="nofollow"><font color="#0066cc"><u><b>here</b></u></font></a>.
+
+
+          <h3> Robust Statistics Segmenter, an interactive 3D segmentation software </h3>
+          <img src="images/RSS_MultiObjSeg1.png" align="middle" style="width:500px;"><br>
+
+          Tracing out the target in a 3-Dimensional volume data is
+          time consuming. This algorithm/software is an end-user
+          oriented, interactive 3D image segmentation tool.  It is
+          fully integrated in the 3D Slicer software. To use it, the
+          user will simply provide a few strokes in the desired region
+          and this algorithm/software then takes over and performs the
+          full 3D segmentation.<br>
+
+          TODO: I'll add code here soon.
+
+          <h3> Conformal map a VTK surface to a sphere </h3>
+          <img src="images/Nice.png" align="middle" style="width:250px;">
+          <img src="images/Nice-flat.png" align="middle" style="width:250px;"><br>
+
+          Given a genus-0 surface, that is, a closed surface with no
+          holes and no handles, this filter maps the surface to a
+          sphere. The angle will be preserved during the mapping. It's
+          based on the paper On the Laplace-Beltrami operator and
+          brain surface flattening by Angenent, Haker, Tannenbaum and
+          Kikinis, published on IEEE TMI. The implementation is now
+          shipped with the InsightToolkit. The implementation and the
+          usage is detailed in the Conformal Flattening ITK Filter
+          published in the Insight Journal/MICCAI 2006 Open Science
+          Workshop.
+
+          For example, the surface below on the left will be mapped to
+          the sphere on the right.<br>
+
+          TODO: I'll add code here soon.
+
+          <h3> Wavelet transform on sphere </h3>
+          <img src="images/locallyFilterShape.png" align="middle" style="width:500px;"><br>
+	      <ul>
+            <li>How to do wavelet analysis on a 2-sphere?</li>
+            <li>How that can be applied to localized analysis of a shape?</li>
+	      </ul>
+
+          TODO: I'll add code here soon.
+
+          <!-- <h3>  <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Contributions to the Open Science</h3> -->
+	      <!-- <ol> -->
+	      <!--   <li><b>Y. Gao</b>, R. Kikinis, and A. Tannenbaum, <i>Robust statistics automatic 3D image segmentation software,</i> As of 2013.4.10, its tutorial pages: <a href="http://www.slicer.org/slicerWiki/index.php/Modules:RobustStatisticsSeg-Documentation-3.6">Version 3.6</a> and <a href="http://www.slicer.org/slicerWiki/index.php/Documentation/4.0/Modules/RobustStatisticsSegmenter">Version 4</a> have over <b>30,100</b> total page accesses. This algorithm is one of the main segmentation module of 3D Slicer, a medical image computing software platform.</li> -->
+	      <!--   <li><b>Y. Gao</b>, D. Nain, X. LeFaucheur, and A. Tannenbaum, <i>Spherical wavelet ITK filter,</i> As of 2012.9.24, this module has <b>4740</b> downloads, ranking <b>6th</b> among all papers in that journal.</li> -->
+	      <!--   <li><b>Y. Gao</b>, J. Melonakos, and A. Tannenbaum, <i>Conformal flattening ITK filter,</i> part of InsightToolkit (ITK) package, <b>1476</b> downloads as of 2012.9.24.</li> -->
+	      <!--   <li><b>Y. Gao</b> and A. Tannenbaum, <i>Left atrium segmentation tool for MR imagery,</i> part of 3D Slicer package.</li> -->
+	      <!-- </ol> -->
         </section>
 
         <aside id="sidebar">
