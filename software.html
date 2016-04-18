@@ -73,6 +73,43 @@
 
           <br><br>
           <hr>
+          <h3> Conformal map a VTK surface to a sphere  <a href="codeZip/conformalMapping.tar.gz" style="background-color:orange">Source code</a> </h3>
+          <img src="images/Nice_250px.png" align="middle" style="width:250px;">
+          <img src="images/Nice-flat_250px.png" align="middle" style="width:250px;">
+
+          <p>Given a genus-0 surface, that is, a closed surface with no
+          holes and no handles, this filter maps the surface to a
+          sphere. The angle will be preserved during the mapping. It's
+          based on the paper On the Laplace-Beltrami operator and
+          brain surface flattening by Angenent, Haker, Tannenbaum and
+          Kikinis, published on IEEE TMI. The implementation is now
+          shipped with the InsightToolkit. The implementation and the
+          usage is detailed in the</p>
+
+          <p>Gao Y, Melonakos J, Tannenbaum AR. <i>Conformal Flattening ITK
+          Filter</i>. MICCAI, Open Science Workshop/Insight Journal, 2006</p>
+
+          <p>For example, the surface below on the left will be mapped to
+          the sphere on the right.</p>
+
+          <p>The sources code here, however, is a further improvement
+          over the previous publication: First, after we submitted it
+          to the Insight Journal, thanks to the contribution of
+          Dr. Alexandre Gouaillard and the open science philosophy of
+          the journal, the code has been improved to be more coherent
+          with the ITK framework. Later, we utilized the
+          preconditioned conjugate gradient solver in the computation
+          which significantly accelerated the algorithm. The last
+          improvement was a to make sure that the points on the final
+          sphere is more evenly distributed.</p>
+
+          <p>Comparing with the code now in ITK 3.20, the code here
+          has tighter convergence criteria and therefore gives better
+          result. These changes will be adopted in ITKv4.</p>
+
+
+          <br><br>
+          <hr>
           <h3> Interactive 3D segmentation software based on local statistics  </h3>
           <img src="images/RSS_MultiObjSeg1_500px.png" align="middle" style="width:500px;">
 
@@ -86,27 +123,6 @@
 
           <p>TODO: I'll add code here soon.</p>
 
-          <br><br>
-          <hr>
-          <h3> Conformal map a VTK surface to a sphere </h3>
-          <img src="images/Nice_250px.png" align="middle" style="width:250px;">
-          <img src="images/Nice-flat_250px.png" align="middle" style="width:250px;">
-
-          <p>Given a genus-0 surface, that is, a closed surface with no
-          holes and no handles, this filter maps the surface to a
-          sphere. The angle will be preserved during the mapping. It's
-          based on the paper On the Laplace-Beltrami operator and
-          brain surface flattening by Angenent, Haker, Tannenbaum and
-          Kikinis, published on IEEE TMI. The implementation is now
-          shipped with the InsightToolkit. The implementation and the
-          usage is detailed in the Conformal Flattening ITK Filter
-          published in the Insight Journal/MICCAI 2006 Open Science
-          Workshop.</p>
-
-          <p>For example, the surface below on the left will be mapped to
-          the sphere on the right.</p>
-
-          <p>TODO: I'll add code here soon.</p>
 
           <br><br>
           <h3> Wavelet transform on sphere </h3>
