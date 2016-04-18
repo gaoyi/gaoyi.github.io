@@ -30,7 +30,29 @@
       <div class="inner clearfix">
         <section id="main-content">
           <!-- <h3>  <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Publications</h3> -->
-          <hr>
+          <h3> Statistical shape analysis --- A quantitatively validated approach <a href="https://github.com/gaoyi/SPoM" style="background-color:orange">Source code</a></h3>
+          <img src="images/SPoMGraphicalAbstract.png" align="middle" style="width:500px;">
+          <p>In our project:</p>
+
+          <p><i>``Gao Y, Bouix S. Statistical Shape Analysis using 3D
+              Poisson Equation---A Quantitatively Validated
+              Approach. Medical Image Analysis. , vol. 30, pp. 72-84,
+              2016.''</i> </p>
+	      <ul>
+            <li>We proposed a new statistical shape
+            analysis/morphometry technique based on the 3D Poisson
+            Equation.</li>
+            <li>In addition, we proposed a quantitative evaluation
+            framework for morphometry/shape analysis methods.</li>
+            <li>To the best of our knowledge, this is the first
+            quantitative morphometry evaluation framework and the
+            proposed method is the morphometry technique that is
+            systematically and quantitatively validated and
+            evaluated.</li>
+            <li>The source code is hosted on github at <a href="https://github.com/gaoyi/SPoM" rel="nofollow"><font color="#0066cc"><u><b>here</b></u></font></a>.</p></li>
+	      </ul>
+
+          <br><br><br>
           <h3> 多尺度形状分解与重建，三维小波变换（ITK格式）<a href="https://github.com/gaoyi/multiScaleShape" style="background-color:orange">源代码下载</a></h3>
           <img src="images/waveletShapeGraphicalAbstract_500px.png" align="middle" style="width:500px;"><br>
           <!-- <img src="images/waveletShapeGraphicalAbstract_small.png" alt="Multi-scale shape representation and shape based segmentation" style="width:304px;height:228px;"> -->
@@ -50,6 +72,43 @@
           at <a href="https://github.com/gaoyi/multiScaleShape"
           rel="nofollow"><font color="#0066cc"><u><b>here</b></u></font></a>.</p>
 
+
+          <br><br>
+          <hr>
+          <h3> 曲面共形映射至球面（VTK、ITK格式） <a href="codeZip/conformalMapping.tar.gz" style="background-color:orange">Source code</a></h3>
+          <img src="images/Nice_250px.png" align="middle" style="width:250px;">
+          <img src="images/Nice-flat_250px.png" align="middle" style="width:250px;"><br>
+
+          <p>Given a genus-0 surface, that is, a closed surface with no
+          holes and no handles, this filter maps the surface to a
+          sphere. The angle will be preserved during the mapping. It's
+          based on the paper On the Laplace-Beltrami operator and
+          brain surface flattening by Angenent, Haker, Tannenbaum and
+          Kikinis, published on IEEE TMI. The implementation is now
+          shipped with the InsightToolkit. The implementation and the
+          usage is detailed in the</p>
+
+          <p>Gao Y, Melonakos J, Tannenbaum AR. <i>Conformal Flattening ITK
+          Filter</i>. MICCAI, Open Science Workshop/Insight Journal, 2006</p>
+
+          <p>For example, the surface below on the left will be mapped to
+          the sphere on the right.</p>
+
+          <p>The sources code here, however, is a further improvement
+          over the previous publication: First, after we submitted it
+          to the Insight Journal, thanks to the contribution of
+          Dr. Alexandre Gouaillard and the open science philosophy of
+          the journal, the code has been improved to be more coherent
+          with the ITK framework. Later, we utilized the
+          preconditioned conjugate gradient solver in the computation
+          which significantly accelerated the algorithm. The last
+          improvement was a to make sure that the points on the final
+          sphere is more evenly distributed.</p>
+
+          <p>Comparing with the code now in ITK 3.20, the code here
+          has tighter convergence criteria and therefore gives better
+          result. These changes will be adopted in ITKv4.</p>
+
           <br><br>
           <hr>
           <h3> 基于局部统计信息和三维水平集的分割软件 </h3>
@@ -62,28 +121,6 @@
           user will simply provide a few strokes in the desired region
           and this algorithm/software then takes over and performs the
           full 3D segmentation.</p>
-
-          <p>TODO: I'll add code here soon.</p>
-
-          <br><br>
-          <hr>
-          <h3> 曲面共形映射至球面（VTK、ITK格式） </h3>
-          <img src="images/Nice_250px.png" align="middle" style="width:250px;">
-          <img src="images/Nice-flat_250px.png" align="middle" style="width:250px;"><br>
-
-          <p>Given a genus-0 surface, that is, a closed surface with no
-          holes and no handles, this filter maps the surface to a
-          sphere. The angle will be preserved during the mapping. It's
-          based on the paper On the Laplace-Beltrami operator and
-          brain surface flattening by Angenent, Haker, Tannenbaum and
-          Kikinis, published on IEEE TMI. The implementation is now
-          shipped with the InsightToolkit. The implementation and the
-          usage is detailed in the Conformal Flattening ITK Filter
-          published in the Insight Journal/MICCAI 2006 Open Science
-          Workshop.</p>
-
-          <p>For example, the surface below on the left will be mapped to
-          the sphere on the right.</p>
 
           <p>TODO: I'll add code here soon.</p>
 
