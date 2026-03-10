@@ -340,6 +340,11 @@ ul {
   padding-left: 20px;
 }
 
+#main-content ul li,
+#main-content ol li {
+  margin-bottom: 15px;
+}
+
 ol {
   list-style: decimal inside;
   padding-left: 3px;
