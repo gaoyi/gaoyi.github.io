@@ -30,6 +30,20 @@
       <div class="inner clearfix">
         <section id="main-content">
           <!-- <h3>  <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Publications</h3> -->
+          <h3> 开源软件贡献</h3>
+          
+          <p>我们开发了多个开源算法和软件工具，已在医学影像社区广泛采用。我的贡献包括：</p>
+          
+          <ul>
+            <li><b>Grow From Seed交互式分割算法：</b>成为全球最大的开源医学图像计算平台3D Slicer的核心模块</li>
+            <li><b>Robust Statistics Segmenter：</b>集成到3D Slicer中</li>
+            <li><b>球面小波ITK滤波器：</b>包含在InsightToolkit (ITK)中</li>
+            <li><b>共形球映射ITK滤波器：</b>包含在InsightToolkit (ITK)中</li>
+            <li><b>统计形状分析 (SPoM)：</b>定量形状分析框架，提供Docker镜像</li>
+            <li><b>多尺度形状表示：</b>基于小波的三维形状分解</li>
+          </ul>
+          
+          <hr>
           <h3> Statistical shape analysis --- A quantitatively validated approach <a href="https://github.com/gaoyi/SPoM" style="background-color:orange">Source code</a></h3>
           <img src="images/SPoMGraphicalAbstract.png" align="middle" style="width:500px;">
           <p>In our project:</p>
@@ -111,18 +125,25 @@
 
           <br><br>
           <hr>
-          <h3> 基于局部统计信息和三维水平集的分割软件 </h3>
+          <h3> Grow From Seed：基于局部统计信息的交互式三维分割软件 <a href="https://github.com/gaoyi/growfromseed" style="background-color:orange">源代码</a> </h3>
           <img src="images/RSS_MultiObjSeg1_500px.png" align="middle" style="width:500px;"><br>
 
-          <p>Tracing out the target in a 3-Dimensional volume data is
-          time consuming. This algorithm/software is an end-user
-          oriented, interactive 3D image segmentation tool.  It is
-          fully integrated in the 3D Slicer software. To use it, the
-          user will simply provide a few strokes in the desired region
-          and this algorithm/software then takes over and performs the
-          full 3D segmentation.</p>
+          <p>这是一个面向最终用户的交互式三维图像分割工具，完全集成在3D Slicer软件中。自2014年以来，它已成为3D Slicer（全球最大的开源医学图像计算软件平台）的核心交互式分割组件。</p>
 
-          <p>TODO: I'll add code here soon.</p>
+          <p><i>``Gao Y*, Chen X, Yang Q, Lasso A, Kolesov I, Pieper S, Kikinis R, Tannenbaum A, Zhu L*. An effective and open source interactive 3D medical image segmentation solution. Scientific Reports. 2024; 14:29878.''</i></p>
+
+          <p><b>主要特性：</b></p>
+          <ul>
+            <li>用户友好的交互式分割，只需少量用户输入（几个笔画）</li>
+            <li>实时三维分割反馈</li>
+            <li>作为核心模块集成到3D Slicer中</li>
+            <li>被多个国家的研究人员用于研究和临床实验</li>
+            <li>支持多种医学成像模态（MRI、CT、超声）</li>
+          </ul>
+
+          <p><b>影响：</b>该算法已在医学影像研究社区广泛采用，并在全球临床研究应用中使用。3D Slicer由美国、德国、英国、日本、加拿大等多国大学研究院连续十年联合开发，其中美国卫生署NIH资助经费超过三千万美元。</p>
+
+          <p>源代码可在GitHub上获取：<a href="https://github.com/gaoyi/growfromseed" rel="nofollow"><font color="#0066cc"><u><b>Grow From Seed 代码库</b></u></font></a></p>
 
           <br><br>
           <h3> 球面上的小波变换 </h3>
