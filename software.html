@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    <title>Yi Gao&#39;s homepage</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Software</h1>
+        <h2>Show me the code. --- Linus Torvalds</h2>
+        <a href="indexCN.html" class="button">中文版</a>
+        <!-- <a href="https://github.com/gaoyi" class="button">中文版</a> -->
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <!-- <h3>  <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Publications</h3> -->
+          <h3> Statistical shape analysis --- A quantitatively validated approach <a href="https://github.com/gaoyi/SPoM" style="background-color:orange">Source code</a></h3>
+          <img src="images/SPoMGraphicalAbstract.png" align="middle" style="width:500px;">
+
+          <p><a href="https://hub.docker.com/r/gaoyi/spom" style="background-color:orange">Docker Image: docker pull gaoyi/spom</a></p>
+
+          <p>In our project:</p>
+
+          <p><i>``Gao Y, Bouix S. Statistical Shape Analysis using 3D
+              Poisson Equation---A Quantitatively Validated
+              Approach. Medical Image Analysis. , vol. 30, pp. 72-84,
+              2016.''</i> </p>
+	      <ul>
+            <li>We proposed a new statistical shape
+            analysis/morphometry technique based on the 3D Poisson
+            Equation.</li>
+            <li>In addition, we proposed a quantitative evaluation
+            framework for morphometry/shape analysis methods.</li>
+            <li>To the best of our knowledge, this is the first
+            quantitative morphometry evaluation framework and the
+            proposed method is the morphometry technique that is
+            systematically and quantitatively validated and
+            evaluated.</li>
+            <li>The source code is hosted on github at <a href="https://github.com/gaoyi/SPoM" rel="nofollow"><font color="#0066cc"><u><b>here</b></u></font></a>.</p></li>
+	      </ul>
+
+          <br><br>
+          <h3> Multi-scale shape representation & 3D wavelet transformation <a href="https://github.com/gaoyi/multiScaleShape" style="background-color:orange">Source code</a></h3>
+          <img src="images/waveletShapeGraphicalAbstract_500px.png" align="middle" style="width:500px;">
+          <!-- <img src="images/waveletShapeGraphicalAbstract_small.png" alt="Multi-scale shape representation and shape based segmentation" style="width:304px;height:228px;"> -->
+          <p>In our project:</p>
+
+          <p><i>``Y. Gao, B. Corn, D. Schifter, and A. Tannenbaum,
+          Multiscale 3D shape representation and segmentation with
+          applications to hippocampal/caudate extraction from brain
+          MRI, Medical Image Analysis, vol. 16, no. 2, pp. 374-385,
+          2012''</i> </p>
+
+          <p>we proposed a multi-scale shape decomosition and
+          reconstruction for 3D shapes of arbitrary topology.  As a
+          bi-product, we release the code for performing 2D and 3D
+          wavelet transform on ITK images. The source code is
+          hosted on github
+          at <a href="https://github.com/gaoyi/multiScaleShape" rel="nofollow"><font color="#0066cc"><u><b>here</b></u></font></a>.</p>
+
+          <br><br>
+          <hr>
+          <h3> Conformal map a VTK surface to a sphere <a href="codeZip/conformalMapping.tar.gz" style="background-color:orange">Source code</a> </h3>
+          <img src="images/Nice_250px.png" align="middle" style="width:250px;">
+          <img src="images/Nice-flat_250px.png" align="middle" style="width:250px;">
+
+          <p>Given a genus-0 surface, that is, a closed surface with no
+          holes and no handles, this filter maps the surface to a
+          sphere. The angle will be preserved during the mapping. It's
+          based on the paper On the Laplace-Beltrami operator and
+          brain surface flattening by Angenent, Haker, Tannenbaum and
+          Kikinis, published on IEEE TMI. The implementation is now
+          shipped with the InsightToolkit. The implementation and the
+          usage is detailed in the</p>
+
+          <p>Gao Y, Melonakos J, Tannenbaum AR. <i>Conformal Flattening ITK
+          Filter</i>. MICCAI, Open Science Workshop/Insight Journal, 2006</p>
+
+          <p>For example, the surface below on the left will be mapped to
+          the sphere on the right.</p>
+
+          <p>The sources code here, however, is a further improvement
+          over the previous publication: First, after we submitted it
+          to the Insight Journal, thanks to the contribution of
+          Dr. Alexandre Gouaillard and the open science philosophy of
+          the journal, the code has been improved to be more coherent
+          with the ITK framework. Later, we utilized the
+          preconditioned conjugate gradient solver in the computation
+          which significantly accelerated the algorithm. The last
+          improvement was a to make sure that the points on the final
+          sphere is more evenly distributed.</p>
+
+          <p>Comparing with the code now in ITK 3.20, the code here
+          has tighter convergence criteria and therefore gives better
+          result. These changes will be adopted in ITKv4.</p>
+
+
+          <br><br>
+          <hr>
+          <h3> Interactive 3D segmentation software based on local statistics  </h3>
+          <img src="images/RSS_MultiObjSeg1_500px.png" align="middle" style="width:500px;">
+
+          <p>Tracing out the target in a 3-Dimensional volume data is
+          time consuming. This algorithm/software is an end-user
+          oriented, interactive 3D image segmentation tool.  It is
+          fully integrated in the 3D Slicer software. To use it, the
+          user will simply provide a few strokes in the desired region
+          and this algorithm/software then takes over and performs the
+          full 3D segmentation.</p>
+
+          <p>TODO: I'll add code here soon.</p>
+
+          <br><br>
+          <hr>
+          <h3> A bank of shapes for validating statistical shape analysis methods  </h3>
+
+          <p>In our project:</p>
+
+          <p><i>``Gao Y, Riklin-Raviv T, Bouix S. Shape analysis, a
+          field in need of careful validation. Human brain
+          mapping. 2014 Oct 1;35(10):4965-78.''</i> </p>
+
+          <p>We proposed a framework for validating statistical shape anlaysis methods. </p>
+
+          <p>TODO: I'll add the shapes here soon.</p>
+
+
+
+          <br><br>
+          <h3> Wavelet transform on sphere </h3>
+          <img src="images/locallyFilterShape_500px.png" align="middle" style="width:500px;">
+	      <ul>
+            <li>How to do wavelet analysis on a 2-sphere?</li>
+            <li>How that can be applied to localized analysis of a shape?</li>
+	      </ul>
+
+          <p>TODO: I'll add code here soon.</p>
+
+          <!-- <h3>  <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Contributions to the Open Science</h3> -->
+	      <!-- <ol> -->
+	      <!--   <li><b>Y. Gao</b>, R. Kikinis, and A. Tannenbaum, <i>Robust statistics automatic 3D image segmentation software,</i> As of 2013.4.10, its tutorial pages: <a href="http://www.slicer.org/slicerWiki/index.php/Modules:RobustStatisticsSeg-Documentation-3.6">Version 3.6</a> and <a href="http://www.slicer.org/slicerWiki/index.php/Documentation/4.0/Modules/RobustStatisticsSegmenter">Version 4</a> have over <b>30,100</b> total page accesses. This algorithm is one of the main segmentation module of 3D Slicer, a medical image computing software platform.</li> -->
+	      <!--   <li><b>Y. Gao</b>, D. Nain, X. LeFaucheur, and A. Tannenbaum, <i>Spherical wavelet ITK filter,</i> As of 2012.9.24, this module has <b>4740</b> downloads, ranking <b>6th</b> among all papers in that journal.</li> -->
+	      <!--   <li><b>Y. Gao</b>, J. Melonakos, and A. Tannenbaum, <i>Conformal flattening ITK filter,</i> part of InsightToolkit (ITK) package, <b>1476</b> downloads as of 2012.9.24.</li> -->
+	      <!--   <li><b>Y. Gao</b> and A. Tannenbaum, <i>Left atrium segmentation tool for MR imagery,</i> part of 3D Slicer package.</li> -->
+	      <!-- </ol> -->
+        </section>
+
+        <aside id="sidebar">
+          <p><a href="index.html" class="button">Home</a></p>
+          <p><a href="software.html" class="button">Software</a></p>
+          <p><a href="research.html" class="button">Research</a></p>
+          <p><a href="publications.html" class="button">Publications</a></p>
+        </aside>
+      </div>
+    </div>
+
+
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-50135439-1', 'gaoyi.github.io');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
