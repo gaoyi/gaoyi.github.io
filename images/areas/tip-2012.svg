@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300">
+  <rect width="640" height="300" fill="#0b1d2e"/>
+  <path d="M0 75h640M0 150h640M0 225h640M160 0v300M320 0v300M480 0v300" stroke="#1b3247" stroke-width="1" fill="none"/>
+  <circle cx="320" cy="128" r="30" fill="none" stroke="#2b9dc8" stroke-width="2"/>
+  <path d="M290 128h60M320 98v60" stroke="#2b9dc8" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="320" y="196" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#80d6ef" text-anchor="middle">IEEE Transactions on Image Processing · 2012</text>
+  <text x="320" y="224" font-family="'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#a9b8c2" text-anchor="middle">Figure to come · 配图待补</text>
+</svg>

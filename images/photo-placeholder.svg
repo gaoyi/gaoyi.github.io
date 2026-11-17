@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 165">
+  <rect width="132" height="165" fill="#e6f1fb"/>
+  <circle cx="66" cy="62" r="26" fill="#b5d4f4"/>
+  <path d="M 22 150 Q 22 106 66 106 Q 110 106 110 150 Z" fill="#b5d4f4"/>
+  <text x="66" y="160" font-family="'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10" fill="#0c447c" text-anchor="middle">photo</text>
+</svg>

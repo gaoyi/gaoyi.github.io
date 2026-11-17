@@ -1,211 +1,150 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Science and Software — Yi Gao</title>
+  <meta name="description" content="Open science contributions and open-source software by Yi Gao: Grow From Seed interactive segmentation (3D Slicer core module), SPoM statistical shape analysis, conformal flattening, spherical wavelet ITK filters.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
 
-    <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+<header class="site-header">
+  <div class="inner">
+    <span class="brand"><a href="index.html">Yi Gao</a></span>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a class="active" href="software.html">Open Science</a>
+      <a href="publications.html">Publications</a>
+      <a class="lang" href="softwareCN.html">中文版</a>
+    </nav>
+  </div>
+</header>
 
-    <title>Yi Gao&#39;s homepage</title>
-  </head>
+<main>
+  <section class="page-hero">
+    <div class="inner">
+      <p class="eyebrow">Pillar Two · Open Science</p>
+      <h1 class="page-title">Open Science and Software</h1>
+      <p class="page-sub">"Show me the code." — Linus Torvalds</p>
+    </div>
+  </section>
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Software</h1>
-        <h2>Show me the code. --- Linus Torvalds</h2>
-        <a href="indexCN.html" class="button">中文版</a>
-        <!-- <a href="https://github.com/gaoyi" class="button">中文版</a> -->
-      </div>
-    </header>
+  <section class="band">
+    <div class="inner">
+      <section class="card" style="margin-bottom:22px">
+    <h3>Contributions to the Open-Source Community</h3>
+    <p>Open science is one of the two pillars of my work. The algorithms and tools developed in my group have been adopted at the core of the world's major open-source medical imaging platforms:</p>
+    <ul>
+      <li><b>3D Slicer —</b> <b>Grow From Seed</b> interactive segmentation has been a core module since 2014; <b>Robust Statistics Segmenter</b> has over 39,000 page accesses.</li>
+      <li><b>Insight Toolkit (ITK) —</b> the <b>Spherical Wavelet</b> filter (5,000+ downloads) and the <b>Conformal Flattening</b> filter (1,700+ downloads) are shipped with the toolkit.</li>
+      <li><b>Open platforms and tools —</b> a computational histopathology platform, the SPoM statistical shape analysis framework (with Docker image), and multi-scale shape representation code.</li>
+    </ul>
+    <p class="muted">These tools have been used by researchers and clinicians worldwide and have contributed to advancing medical image computing research.</p>
+    <div class="sw-links">
+      <a class="badge" href="software.html#gfs">Grow From Seed</a>
+      <a class="badge" href="software.html#spom">SPoM</a>
+      <a class="badge" href="software.html#wavelet">Multi-scale Shape</a>
+      <a class="badge" href="software.html#conformal">Conformal Flattening</a>
+      <a class="badge" href="software.html#shapebank">Shape Bank</a>
+      <a class="badge" href="software.html#sphere">Wavelet on Sphere</a>
+    </div>
+  </section>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <!-- <h3>  <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Publications</h3> -->
-          <h3> Open Source Software Contributions</h3>
-          
-          <p>I have developed several open-source algorithms and software tools that have been widely adopted in the medical imaging community. My contributions include:</p>
-          
-          <ul>
-            <li><b>Grow From Seed Interactive Segmentation:</b> Core module in 3D Slicer, the world's largest open-source medical image computing platform</li>
-            <li><b>Robust Statistics Segmenter:</b> Over 39,000 accesses, integrated into 3D Slicer</li>
-            <li><b>Spherical Wavelet ITK Filter:</b> Over 5,000 downloads, included in InsightToolkit (ITK)</li>
-            <li><b>Conformal Flattening ITK Filter:</b> Over 1,700 downloads, included in InsightToolkit (ITK)</li>
-            <li><b>Statistical Shape Analysis (SPoM):</b> Quantitative shape analysis framework with Docker image available</li>
-            <li><b>Multi-scale Shape Representation:</b> Wavelet-based shape decomposition for 3D shapes</li>
-          </ul>
+  <div class="grid-2">
 
-          <p>These tools have been used by researchers and clinicians worldwide and have contributed to advancing medical image computing research.</p>
-
-          <hr>
-          <h3> Statistical shape analysis --- A quantitatively validated approach <a href="https://github.com/gaoyi/SPoM" style="background-color:orange">Source code</a></h3>
-          <img src="images/SPoMGraphicalAbstract.png" align="middle" style="width:500px;">
-
-          <p><a href="https://hub.docker.com/r/gaoyi/spom" style="background-color:orange">Docker Image: docker pull gaoyi/spom</a></p>
-
-          <p>In our project:</p>
-
-          <p><i>``Gao Y, Bouix S. Statistical Shape Analysis using 3D
-              Poisson Equation---A Quantitatively Validated
-              Approach. Medical Image Analysis. , vol. 30, pp. 72-84,
-              2016.''</i> </p>
-	      <ul>
-            <li>We proposed a new statistical shape
-            analysis/morphometry technique based on the 3D Poisson
-            Equation.</li>
-            <li>In addition, we proposed a quantitative evaluation
-            framework for morphometry/shape analysis methods.</li>
-            <li>To the best of our knowledge, this is the first
-            quantitative morphometry evaluation framework and the
-            proposed method is the morphometry technique that is
-            systematically and quantitatively validated and
-            evaluated.</li>
-            <li>The source code is hosted on github at <a href="https://github.com/gaoyi/SPoM" rel="nofollow"><font color="#0066cc"><u><b>here</b></u></font></a>.</p></li>
-	      </ul>
-
-          <br><br>
-          <h3> Multi-scale shape representation & 3D wavelet transformation <a href="https://github.com/gaoyi/multiScaleShape" style="background-color:orange">Source code</a></h3>
-          <img src="images/waveletShapeGraphicalAbstract_500px.png" align="middle" style="width:500px;">
-          <!-- <img src="images/waveletShapeGraphicalAbstract_small.png" alt="Multi-scale shape representation and shape based segmentation" style="width:304px;height:228px;"> -->
-          <p>In our project:</p>
-
-          <p><i>``Y. Gao, B. Corn, D. Schifter, and A. Tannenbaum,
-          Multiscale 3D shape representation and segmentation with
-          applications to hippocampal/caudate extraction from brain
-          MRI, Medical Image Analysis, vol. 16, no. 2, pp. 374-385,
-          2012''</i> </p>
-
-          <p>we proposed a multi-scale shape decomosition and
-          reconstruction for 3D shapes of arbitrary topology.  As a
-          bi-product, we release the code for performing 2D and 3D
-          wavelet transform on ITK images. The source code is
-          hosted on github
-          at <a href="https://github.com/gaoyi/multiScaleShape" rel="nofollow"><font color="#0066cc"><u><b>here</b></u></font></a>.</p>
-
-          <br><br>
-          <hr>
-          <h3> Conformal map a VTK surface to a sphere <a href="codeZip/conformalMapping.tar.gz" style="background-color:orange">Source code</a> </h3>
-          <img src="images/Nice_250px.png" align="middle" style="width:250px;">
-          <img src="images/Nice-flat_250px.png" align="middle" style="width:250px;">
-
-          <p>Given a genus-0 surface, that is, a closed surface with no
-          holes and no handles, this filter maps the surface to a
-          sphere. The angle will be preserved during the mapping. It's
-          based on the paper On the Laplace-Beltrami operator and
-          brain surface flattening by Angenent, Haker, Tannenbaum and
-          Kikinis, published on IEEE TMI. The implementation is now
-          shipped with the InsightToolkit. The implementation and the
-          usage is detailed in the</p>
-
-          <p>Gao Y, Melonakos J, Tannenbaum AR. <i>Conformal Flattening ITK
-          Filter</i>. MICCAI, Open Science Workshop/Insight Journal, 2006</p>
-
-          <p>For example, the surface below on the left will be mapped to
-          the sphere on the right.</p>
-
-          <p>The sources code here, however, is a further improvement
-          over the previous publication: First, after we submitted it
-          to the Insight Journal, thanks to the contribution of
-          Dr. Alexandre Gouaillard and the open science philosophy of
-          the journal, the code has been improved to be more coherent
-          with the ITK framework. Later, we utilized the
-          preconditioned conjugate gradient solver in the computation
-          which significantly accelerated the algorithm. The last
-          improvement was a to make sure that the points on the final
-          sphere is more evenly distributed.</p>
-
-          <p>Comparing with the code now in ITK 3.20, the code here
-          has tighter convergence criteria and therefore gives better
-          result. These changes will be adopted in ITKv4.</p>
-
-
-          <br><br>
-          <hr>
-          <h3> Grow From Seed: Interactive 3D segmentation software based on local statistics <a href="https://github.com/gaoyi/growfromseed" style="background-color:orange">Source code</a> </h3>
-          <img src="images/RSS_MultiObjSeg1_500px.png" align="middle" style="width:500px;">
-
-          <p>This algorithm/software is an end-user oriented, interactive 3D image segmentation tool fully integrated in the 3D Slicer software. Since 2014, it has become a core interactive segmentation component of 3D Slicer, the world's largest open-source medical image computing software platform.</p>
-
-          <p><i>``Gao Y*, Chen X, Yang Q, Lasso A, Kolesov I, Pieper S, Kikinis R, Tannenbaum A, Zhu L*. An effective and open source interactive 3D medical image segmentation solution. Scientific Reports. 2024; 14:29878.''</i></p>
-
-          <p><b>Key Features:</b></p>
-          <ul>
-            <li>User-friendly interactive segmentation with minimal user input (just a few strokes)</li>
-            <li>Real-time 3D segmentation feedback</li>
-            <li>Integrated into 3D Slicer as a core module</li>
-            <li>Used by researchers from multiple countries in their research and clinical experiments</li>
-            <li>Supports various medical imaging modalities (MRI, CT, ultrasound)</li>
-          </ul>
-
-          <p><b>Impact:</b> This algorithm has been widely adopted in the medical imaging research community and is used in clinical research applications worldwide. 3D Slicer is jointly developed by universities and research institutes from the US, Germany, UK, Japan, Canada and other countries over ten years, with NIH funding exceeding $30 million.</p>
-
-          <p>The source code is available on GitHub: <a href="https://github.com/gaoyi/growfromseed" rel="nofollow"><font color="#0066cc"><u><b>Grow From Seed Repository</b></u></font></a></p>
-
-          <br><br>
-          <hr>
-          <h3> A bank of shapes for validating statistical shape analysis methods  </h3>
-
-          <p>In our project:</p>
-
-          <p><i>``Gao Y, Riklin-Raviv T, Bouix S. Shape analysis, a
-          field in need of careful validation. Human brain
-          mapping. 2014 Oct 1;35(10):4965-78.''</i> </p>
-
-          <p>We proposed a framework for validating statistical shape anlaysis methods. </p>
-
-          <p>TODO: I'll add the shapes here soon.</p>
-
-
-
-          <br><br>
-          <h3> Wavelet transform on sphere </h3>
-          <img src="images/locallyFilterShape_500px.png" align="middle" style="width:500px;">
-	      <ul>
-            <li>How to do wavelet analysis on a 2-sphere?</li>
-            <li>How that can be applied to localized analysis of a shape?</li>
-	      </ul>
-
-          <p>TODO: I'll add code here soon.</p>
-
-          <!-- <h3>  <a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Contributions to the Open Science</h3> -->
-	      <!-- <ol> -->
-	      <!--   <li><b>Y. Gao</b>, R. Kikinis, and A. Tannenbaum, <i>Robust statistics automatic 3D image segmentation software,</i> As of 2013.4.10, its tutorial pages: <a href="http://www.slicer.org/slicerWiki/index.php/Modules:RobustStatisticsSeg-Documentation-3.6">Version 3.6</a> and <a href="http://www.slicer.org/slicerWiki/index.php/Documentation/4.0/Modules/RobustStatisticsSegmenter">Version 4</a> have over <b>30,100</b> total page accesses. This algorithm is one of the main segmentation module of 3D Slicer, a medical image computing software platform.</li> -->
-	      <!--   <li><b>Y. Gao</b>, D. Nain, X. LeFaucheur, and A. Tannenbaum, <i>Spherical wavelet ITK filter,</i> As of 2012.9.24, this module has <b>4740</b> downloads, ranking <b>6th</b> among all papers in that journal.</li> -->
-	      <!--   <li><b>Y. Gao</b>, J. Melonakos, and A. Tannenbaum, <i>Conformal flattening ITK filter,</i> part of InsightToolkit (ITK) package, <b>1476</b> downloads as of 2012.9.24.</li> -->
-	      <!--   <li><b>Y. Gao</b> and A. Tannenbaum, <i>Left atrium segmentation tool for MR imagery,</i> part of 3D Slicer package.</li> -->
-	      <!-- </ol> -->
-        </section>
-
-        <aside id="sidebar">
-          <p><a href="index.html" class="button">Home</a></p>
-          <p><a href="software.html" class="button">Software</a></p>
-          <p><a href="research.html" class="button">Research</a></p>
-          <p><a href="publications.html" class="button">Publications</a></p>
-        </aside>
+    <div class="card proj-card card-numbered" id="spom">
+      <div class="card-num">01</div>
+      <div class="card-img"><img src="images/SPoMGraphicalAbstract.png" alt="SPoM statistical shape analysis graphical abstract"></div>
+      <h3>Statistical Shape Analysis — A Quantitatively Validated Approach</h3>
+      <p>In <i>"Gao Y, Bouix S. Statistical Shape Analysis using 3D Poisson Equation — A Quantitatively Validated Approach. Medical Image Analysis, vol. 30, pp. 72–84, 2016"</i>:</p>
+      <ul>
+        <li>We proposed a new statistical shape analysis / morphometry technique based on the 3D Poisson equation.</li>
+        <li>We proposed a quantitative evaluation framework for morphometry / shape analysis methods.</li>
+        <li>To the best of our knowledge, this is the first quantitative morphometry evaluation framework, and the proposed method is the first morphometry technique that is systematically and quantitatively validated.</li>
+      </ul>
+      <div class="sw-links">
+        <a class="badge" href="https://github.com/gaoyi/SPoM">Source code</a>
+        <a class="badge ghost" href="https://hub.docker.com/r/gaoyi/spom">Docker: docker pull gaoyi/spom</a>
       </div>
     </div>
 
+    <div class="card proj-card card-numbered" id="wavelet">
+      <div class="card-num">02</div>
+      <div class="card-img"><img src="images/waveletShapeGraphicalAbstract_500px.png" alt="Multi-scale shape representation graphical abstract"></div>
+      <h3>Multi-scale Shape Representation &amp; 3D Wavelet Transformation</h3>
+      <p>In <i>"Gao Y, Corn B, Schifter D, Tannenbaum A. Multiscale 3D shape representation and segmentation with applications to hippocampal/caudate extraction from brain MRI. Medical Image Analysis, vol. 16, no. 2, pp. 374–385, 2012"</i>:</p>
+      <ul>
+        <li>We proposed a multi-scale shape decomposition and reconstruction for 3D shapes of arbitrary topology.</li>
+        <li>As a by-product, we release code for performing 2D and 3D wavelet transforms on ITK images.</li>
+      </ul>
+      <div class="sw-links"><a class="badge" href="https://github.com/gaoyi/multiScaleShape">Source code</a></div>
+    </div>
 
+    <div class="card proj-card card-numbered" id="conformal">
+      <div class="card-num">03</div>
+      <div class="card-img" style="display:flex; gap:8px; justify-content:center;">
+        <img class="small" src="images/Nice_250px.png" alt="Original genus-0 surface">
+        <img class="small" src="images/Nice-flat_250px.png" alt="Surface mapped to a sphere">
+      </div>
+      <h3>Conformal Flattening: Map a VTK Surface to a Sphere</h3>
+      <p>Given a genus-0 surface (a closed surface with no holes and no handles), this filter maps the surface to a sphere while preserving angles. It is based on the paper <i>"On the Laplace-Beltrami operator and brain surface flattening"</i> by Angenent, Haker, Tannenbaum and Kikinis (IEEE TMI). The implementation is shipped with the Insight Toolkit, and is detailed in <i>Gao Y, Melonakos J, Tannenbaum AR. Conformal Flattening ITK Filter. MICCAI Open Science Workshop / Insight Journal, 2006</i>.</p>
+      <ul>
+        <li>The code here improves on the published version: more coherent with the ITK framework (contribution of Dr. Alexandre Gouaillard), a preconditioned conjugate gradient solver for significant speed-up, and a more even distribution of points on the sphere.</li>
+        <li>Compared with the code in ITK 3.20, it has tighter convergence criteria and better results; these changes were adopted in ITKv4.</li>
+      </ul>
+      <div class="sw-links"><a class="badge" href="codeZip/conformalMapping.tar.gz">Source code (tar.gz)</a></div>
+    </div>
 
+    <div class="card proj-card card-numbered" id="gfs">
+      <div class="card-num">04</div>
+      <div class="card-img"><img src="images/RSS_MultiObjSeg1_500px.png" alt="Grow From Seed multi-object segmentation in 3D Slicer"></div>
+      <h3>Grow From Seed: Interactive 3D Segmentation Based on Local Statistics</h3>
+      <p>An end-user oriented, interactive 3D image segmentation tool fully integrated into 3D Slicer. Since 2014, it has been a core interactive segmentation component of 3D Slicer, the world's largest open-source medical image computing software platform.</p>
+      <p><i>"Gao Y*, Chen X, Yang Q, Lasso A, Kolesov I, Pieper S, Kikinis R, Tannenbaum A, Zhu L*. An effective and open source interactive 3D medical image segmentation solution. Scientific Reports. 2024; 14:29878."</i></p>
+      <p><b>Key features:</b></p>
+      <ul>
+        <li>User-friendly interactive segmentation with minimal input (just a few strokes)</li>
+        <li>Real-time 3D segmentation feedback</li>
+        <li>Integrated into 3D Slicer as a core module</li>
+        <li>Used by researchers from multiple countries in research and clinical experiments</li>
+        <li>Supports MRI, CT, and ultrasound</li>
+      </ul>
+      <p class="muted"><b>Impact:</b> widely adopted in the medical imaging research community and used in clinical research worldwide. 3D Slicer is jointly developed by universities and research institutes from the US, Germany, UK, Japan, Canada and other countries over more than ten years, with NIH funding exceeding $30 million.</p>
+      <div class="sw-links"><a class="badge" href="https://github.com/gaoyi/growfromseed">Source code</a></div>
+    </div>
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <div class="card proj-card card-numbered" id="shapebank">
+      <div class="card-num">05</div>
+      <h3>A Bank of Shapes for Validating Statistical Shape Analysis Methods</h3>
+      <p>In <i>"Gao Y, Riklin-Raviv T, Bouix S. Shape analysis, a field in need of careful validation. Human Brain Mapping. 2014 Oct 1;35(10):4965–78."</i> we proposed a framework for validating statistical shape analysis methods.</p>
+      <div class="sw-links"><span class="badge ghost">Shapes coming soon</span></div>
+    </div>
 
-      ga('create', 'UA-50135439-1', 'gaoyi.github.io');
-      ga('send', 'pageview');
+    <div class="card proj-card card-numbered" id="sphere">
+      <div class="card-num">06</div>
+      <div class="card-img"><img src="images/locallyFilterShape_500px.png" alt="Localized shape filtering on the sphere"></div>
+      <h3>Wavelet Transform on the Sphere</h3>
+      <ul>
+        <li>How to perform wavelet analysis on a 2-sphere?</li>
+        <li>How can it be applied to localized analysis of a shape?</li>
+      </ul>
+      <div class="sw-links"><span class="badge ghost">Code coming soon</span></div>
+    </div>
+      </div>
+    </div>
+  </section>
 
-    </script>
+</main>
 
-  </body>
+<footer class="site-footer">
+  <div class="inner">
+    <span>Yi Gao · Shenzhen University</span>
+    <span><a href="publications.html">Publications</a> · <a href="research.html">Research</a> · gaoyi@gatech.edu</span>
+  </div>
+</footer>
+
+</body>
 </html>

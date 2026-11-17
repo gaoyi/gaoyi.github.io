@@ -1,0 +1,363 @@
+{
+  "areas": [
+    {
+      "id": "breast", "num": "01",
+      "kind_en": "By Application", "kind_cn": "按应用领域",
+      "title_en": "Breast Cancer", "title_cn": "乳腺癌",
+      "intro_en": "From large-scale screening to molecular prediction: AI-assisted automated breast ultrasound (ABUS) deployed in 70+ medical institutions with more than 90,000 people screened, remote-reading screening models, MRI quantification, and China's first Class II certified 3D breast ultrasound image management software.",
+      "intro_cn": "从大规模筛查到分子预测：AI 辅助自动乳腺超声（ABUS）部署 70+ 机构、筛查 9 万余人；远程阅片筛查模式、MRI 定量；三维乳腺超声影像管理软件获国内首个该类别二类医疗器械注册证。",
+      "highlights_en": [
+        "Detection rate raised from 0.5‰ to 3.13‰ through AI-assisted screening",
+        "Prospective remote-reading study across 46 community health centers",
+        "Class II Medical Device Registration Certificate — first of its kind in China"
+      ],
+      "highlights_cn": [
+        "AI 辅助筛查将检出率从 0.5‰ 提高到 3.13‰",
+        "覆盖 46 个社区卫生中心的远程阅片前瞻性研究",
+        "获国内首个该类别二类医疗器械注册证"
+      ],
+      "papers": [
+        {"id": "cmj-2025", "type": "paper", "title": "人工智能辅助自动乳腺超声与手持超声在乳腺癌筛查中的效能比较（Comparison of AI-assisted automated breast ultrasound and handheld ultrasound in breast cancer screening）", "venue": "Chinese Medical Journal（中华医学杂志）", "year": 2025, "doi": "", "pill": "中华医学杂志 2025",
+         "bullets_en": ["Head-to-head comparison of AI-assisted ABUS and handheld ultrasound in population breast cancer screening.", "Evidence base for ABUS-based screening programs, published in China's flagship medical journal."],
+         "bullets_cn": ["人工智能辅助 ABUS 与手持超声在人群乳腺癌筛查中的头对头比较。", "发表于《中华医学杂志》，为基于 ABUS 的筛查模式提供循证依据。"]},
+        {"id": "ajr-2024", "type": "paper", "title": "Automated Breast Ultrasound With Remote Reading for Primary Breast Cancer Screening: A Prospective Study Involving 46 Community Health Centers in China", "venue": "American Journal of Roentgenology", "year": 2024, "doi": "10.2214/AJR.24.31830", "pill": "AJR 2024",
+         "bullets_en": ["Prospective study of remote-reading ABUS screening across 46 community health centers.", "Establishes a scalable primary screening model for community settings."],
+         "bullets_cn": ["覆盖 46 个社区卫生中心的远程阅片 ABUS 筛查前瞻性研究。", "建立了面向社区场景的可推广初筛模式。"]},
+        {"id": "jiim-2026", "type": "paper", "title": "Optimal lossy compression scheme of 3D volumetric ultrasound images for remote breast cancer screening", "venue": "Journal of Imaging Informatics in Medicine", "year": 2026, "doi": "10.1007/s10278-025-01735-9", "pill": "JIIM 2026",
+         "bullets_en": ["Determines the optimal lossy compression scheme for 3D volumetric ultrasound under remote-screening constraints.", "Enables practical tele-screening by cutting storage and transmission costs."],
+         "bullets_cn": ["面向远程筛查场景确定三维容积超声的最优有损压缩方案。", "显著降低存储与传输成本，支撑可落地的远程筛查。"]},
+        {"id": "i2i-2024", "type": "paper", "title": "Explainable breast cancer molecular expression prediction using multi-task deep-learning based on 3D whole breast ultrasound", "venue": "Insights into Imaging", "year": 2024, "doi": "10.1186/s13244-024-01810-9", "pill": "Insights Imaging 2024",
+         "bullets_en": ["Explainable multi-task deep learning predicts molecular expression from 3D whole-breast ultrasound.", "Non-invasive indication of molecular phenotype to support treatment planning."],
+         "bullets_cn": ["可解释的多任务深度学习基于三维全乳超声预测分子表达。", "为治疗规划提供无创的分子表型提示。"]},
+        {"id": "jbc-2022", "type": "paper", "title": "Assessment of Neoadjuvant Treatment Response Using Automated Breast Ultrasound in Breast Cancer", "venue": "Journal of Breast Cancer", "year": 2022, "doi": "10.4048/jbc.2022.25.e32", "pill": "J Breast Cancer 2022",
+         "bullets_en": ["ABUS-based assessment of neoadjuvant treatment response.", "Longitudinal volumetric imaging of tumor response."],
+         "bullets_cn": ["基于 ABUS 的新辅助治疗疗效评估。", "肿瘤响应的纵向容积成像。"]},
+        {"id": "zhzl-2024", "type": "paper", "title": "基于自动乳腺超声远程阅片模式的乳腺癌筛查临床研究", "venue": "中华肿瘤杂志", "year": 2024, "doi": "10.3760/cma.j.cn112152-20240204-00064", "pill": "中华肿瘤杂志 2024",
+         "bullets_en": ["Clinical study of the remote-reading ABUS screening pathway.", "Real-world evidence from a Chinese screening population."],
+         "bullets_cn": ["自动乳腺超声远程阅片筛查模式的临床研究。", "来自中国筛查人群的真实世界证据。"]},
+        {"id": "jmri-2018", "type": "paper", "title": "Reproducible automated breast density measure with no ionizing radiation using fat-water decomposition MRI", "venue": "Journal of Magnetic Resonance Imaging", "year": 2018, "doi": "", "pill": "J-MRI 2018",
+         "bullets_en": ["Fully automated, radiation-free breast density measurement from fat-water decomposition MRI.", "Emphasis on reproducibility for longitudinal screening."],
+         "bullets_cn": ["基于脂肪-水分解 MRI 的全自动、无电离辐射乳腺密度测量。", "面向纵向筛查强调可重复性。"]},
+        {"id": "jmri-2019", "type": "paper", "title": "Preoperative prediction of sentinel lymph node metastasis in breast cancer by radiomic signatures from dynamic contrast-enhanced MRI", "venue": "Journal of Magnetic Resonance Imaging", "year": 2019, "doi": "", "pill": "J-MRI 2019",
+         "bullets_en": ["Radiomic signatures from DCE-MRI predict sentinel lymph node metastasis preoperatively.", "Recognized as J-MRI's most-cited original research paper of 2019–2020."],
+         "bullets_cn": ["基于 DCE-MRI 影像组学特征术前预测前哨淋巴结转移。", "获评 J-MRI 2019–2020 年度最高被引原创研究论文。"]}
+      ]
+    },
+    {
+      "id": "brain", "num": "02",
+      "kind_en": "By Application", "kind_cn": "按应用领域",
+      "title_en": "Brain Science", "title_cn": "脑科学",
+      "intro_en": "Quantitative neuroanatomy and clinical neuro AI: fine-scale hippocampal morphology across thousands of subjects, 3D cerebellar reconstruction, glymphatic fluid transport modeling, and MRI-based clinical diagnosis. Ongoing: respiration and sleep analysis, EEG analysis, and transcranial Doppler-based cerebral blood flow assessment.",
+      "intro_cn": "定量神经解剖与临床神经 AI：覆盖数千受试者的海马精细形态学、小脑三维重建、类淋巴通路流体运输建模、基于 MRI 的临床诊断。进行中：呼吸与睡眠分析、脑电（EEG）分析、经颅多普勒（TCD）脑血流评估。",
+      "highlights_en": [
+        "Hippocampal morphology across 2,911 subjects from multiple datasets",
+        "Cerebellar reconstruction rated \"an exceptional technical achievement\" by reviewers",
+        "Glymphatic transport modeling featured as NeuroImage cover highlight"
+      ],
+      "highlights_cn": [
+        "多数据集 2,911 名受试者的海马精细形态学",
+        "小脑重建被审稿人评为\"非凡的技术成就\"",
+        "类淋巴通路建模获 NeuroImage 封面亮点"
+      ],
+      "papers": [
+        {"id": "nicl-2024", "type": "paper", "title": "Fine hippocampal morphology analysis with a multi-dataset cross-sectional study on 2911 subjects", "venue": "NeuroImage: Clinical", "year": 2024, "doi": "10.1016/j.nicl.2024.103620", "pill": "NeuroImage:Clin 2024",
+         "bullets_en": ["Fine-scale hippocampal morphology across 2,911 subjects from multiple datasets.", "Population-level mapping of subtle anatomical variation."],
+         "bullets_cn": ["多数据集 2,911 名受试者的海马精细形态分析。", "群体层面的精细解剖变异制图。"]},
+        {"id": "fnins-2023", "type": "paper", "title": "Fine Scale Hippocampus Morphology Variation Cross 552 Healthy Subjects from Age 20-80", "venue": "Frontiers in Neuroscience", "year": 2023, "doi": "10.3389/fnins.2023.1162096", "pill": "Front Neurosci 2023",
+         "bullets_en": ["Morphology variation across the healthy adult lifespan (ages 20–80).", "Reference data for aging and neurodegeneration studies."],
+         "bullets_cn": ["20–80 岁健康人全生命周期的形态学变异。", "为衰老与神经退行性疾病研究提供参考数据。"]},
+        {"id": "cerebellum-2022", "type": "paper", "title": "Three-dimensional digital reconstruction of the cerebellar cortex: Lobule thickness, surface area measurements and layer architecture", "venue": "Cerebellum", "year": 2022, "doi": "10.1007/s12311-022-01390-8", "pill": "Cerebellum 2022",
+         "bullets_en": ["3D digital reconstruction of the cerebellar cortex at the level of cortical layers.", "Reviewer: \"Overall it's an exceptional technical achievement.\""],
+         "bullets_cn": ["皮层分层水平的小脑三维数字重建。", "审稿人评价：\"总体而言，这是一项非凡的技术成就。\""]},
+        {"id": "neuroimage-2017", "type": "paper", "title": "Cerebrospinal and interstitial fluid transport via the glymphatic pathway modeled by optimal mass transport", "venue": "NeuroImage", "year": 2017, "doi": "", "pill": "NeuroImage 2017",
+         "bullets_en": ["Cerebrospinal and interstitial fluid transport via the glymphatic pathway modeled by optimal mass transport.", "Featured as NeuroImage cover highlight."],
+         "bullets_cn": ["以最优质量传输建模类淋巴通路的脑脊液与组织间隙液运输。", "获 NeuroImage 封面亮点。"]},
+        {"id": "bmcp-2025", "type": "paper", "title": "Diagnosing acute bilirubin encephalopathy in neonates using MRI-based deep learning model", "venue": "BMC Pediatrics", "year": 2025, "doi": "10.1186/s12887-025-06150-1", "pill": "BMC Pediatr 2025",
+         "bullets_en": ["MRI-based deep learning diagnosis of neonatal acute bilirubin encephalopathy.", "Decision support for a time-critical neonatal condition."],
+         "bullets_cn": ["基于 MRI 深度学习的新生儿急性胆红素脑病诊断。", "为时间敏感的新生儿疾病提供决策支持。"]},
+        {"id": "cns-2025", "type": "paper", "title": "Relationship between the volume of ventricles, brain parenchyma and neurocognition in children after Hydrocephalus treatment", "venue": "Child's Nervous System", "year": 2025, "doi": "10.1007/s00381-024-06674-4", "pill": "Childs Nerv Syst 2025",
+         "bullets_en": ["Quantifies ventricle and brain parenchyma volumes after hydrocephalus treatment.", "Links imaging measures to neurocognitive outcomes in children."],
+         "bullets_cn": ["脑积水治疗后脑室与脑实质体积的定量分析。", "将影像测量与儿童神经认知结局相关联。"]},
+        {"id": "hbm-2018", "type": "paper", "title": "The bumps under the hippocampus", "venue": "Human Brain Mapping", "year": 2018, "doi": "", "pill": "HBM 2018",
+         "bullets_en": ["Characterizes the fine dentate anatomy beneath the hippocampus.", "Anatomical foundation for subsequent fine-morphology studies."],
+         "bullets_cn": ["刻画海马下方的精细齿状解剖结构。", "后续精细形态学研究的解剖学基础。"]},
+        {"id": "brain-ongoing", "type": "project", "title": "Respiration, sleep, and EEG analysis ｜ 呼吸、睡眠与脑电分析", "venue": "Ongoing work", "year": 2026, "doi": "", "pill": "进行中 · Ongoing",
+         "bullets_en": ["Respiration and sleep analysis; EEG analysis.", "Transcranial Doppler (TCD) based cerebral blood flow assessment."],
+         "bullets_cn": ["呼吸与睡眠分析、脑电（EEG）分析。", "经颅多普勒（TCD）脑血流评估。"]}
+      ]
+    },
+    {
+      "id": "spine", "num": "03",
+      "kind_en": "By Application", "kind_cn": "按应用领域",
+      "title_en": "Spine and Orthopedics", "title_cn": "骨科脊柱",
+      "intro_en": "Surgical planning and outcome simulation for spinal surgery: fusing 3D body-surface scanning with CT volumetric data, freehand 3D ultrasound acquisition, image stitching, thoracic spine enhancement, and finite element analysis of bone structure — in close collaboration with clinical spine surgery teams.",
+      "intro_cn": "面向脊柱外科的手术规划与效果模拟：三维体表扫描与 CT 容积数据融合、自由扫查三维超声、图像拼接、胸椎增强与骨结构有限元分析——与脊柱外科临床团队深度合作推进。",
+      "highlights_en": [
+        "3D body surface + CT fusion for ankylosing spondylitis surgery simulation (ISBI 2024)",
+        "Freehand 3D ultrasound via probe-mounted vision + IMU",
+        "Ongoing: surface scanning, stitching, thoracic enhancement, FEA"
+      ],
+      "highlights_cn": [
+        "三维体表 + CT 融合的强直性脊柱炎手术模拟（ISBI 2024）",
+        "探头搭载视觉 + IMU 的自由扫查三维超声",
+        "进行中：体表扫描、拼接、胸椎增强、有限元分析"
+      ],
+      "papers": [
+        {"id": "isbi-2024", "type": "paper", "title": "Combing 3D body surface and CT volumetric data for ankylosing spondylitis surgery outcome simulation", "venue": "IEEE International Symposium on Biomedical Imaging (ISBI)", "year": 2024, "doi": "", "pill": "ISBI 2024",
+         "bullets_en": ["Fuses 3D body-surface scanning with CT volumetric data.", "Simulates surgical outcomes for ankylosing spondylitis."],
+         "bullets_cn": ["三维体表扫描与 CT 容积数据融合。", "用于强直性脊柱炎的手术效果模拟。"]},
+        {"id": "umb-2024", "type": "paper", "title": "Freehand 3D ultrasound imaging based on probe-mounted vision and IMU system", "venue": "Ultrasound in Medicine & Biology", "year": 2024, "doi": "10.1016/j.ultrasmedbio.2024.03.021", "pill": "UMB 2024",
+         "bullets_en": ["Probe-mounted vision + IMU enables freehand 3D ultrasound acquisition.", "Core sensing technology for surface and volumetric imaging outside the scanner."],
+         "bullets_cn": ["探头搭载视觉与 IMU 实现自由扫查三维超声成像。", "扫描床外的体表与容积成像核心传感技术。"]},
+        {"id": "proj-surface", "type": "project", "title": "3D body surface scanning for spinal deformity ｜ 脊柱畸形三维体表扫描", "venue": "Ongoing work", "year": 2026, "doi": "", "pill": "进行中 · Ongoing",
+         "bullets_en": ["Markerless 3D surface topography for scoliosis and ankylosing spondylitis assessment.", "Radiation-free external measurement complementing CT."],
+         "bullets_cn": ["无标记三维体表地形测量，用于脊柱侧弯与强直性脊柱炎评估。", "无辐射的外部测量，与 CT 互补。"]},
+        {"id": "proj-stitch", "type": "project", "title": "Wide-field image stitching ｜ 大视场图像拼接", "venue": "Ongoing work", "year": 2026, "doi": "", "pill": "进行中 · Ongoing",
+         "bullets_en": ["Stitching of surface and volumetric images into wide-field acquisitions.", "Extends the effective field of view for spinal applications."],
+         "bullets_cn": ["体表与容积图像的大视场拼接。", "扩展脊柱应用的有效视场。"]},
+        {"id": "proj-thoracic", "type": "project", "title": "Thoracic spine image enhancement ｜ 胸椎增强成像", "venue": "Ongoing work", "year": 2026, "doi": "", "pill": "进行中 · Ongoing",
+         "bullets_en": ["Imaging enhancement techniques tailored to thoracic vertebrae.", "Improves visibility for planning and measurement."],
+         "bullets_cn": ["面向胸椎的成像增强技术。", "提升手术规划与测量的可视性。"]},
+        {"id": "proj-fea", "type": "project", "title": "Finite element analysis of bone structure ｜ 骨结构有限元分析", "venue": "Ongoing work", "year": 2026, "doi": "", "pill": "进行中 · Ongoing",
+         "bullets_en": ["Finite element analysis of bone structure for surgical planning.", "Mechanics-informed simulation of surgical interventions."],
+         "bullets_cn": ["面向手术规划的骨结构有限元分析。", "力学驱动的手术干预模拟。"]}
+      ]
+    },
+    {
+      "id": "pathology", "num": "04",
+      "kind_en": "By Application", "kind_cn": "按应用领域",
+      "title_en": "Computational Pathology", "title_cn": "计算病理学",
+      "intro_en": "Open platforms and deep learning for digital pathology: nucleus and gland segmentation, gigapixel whole-slide classification, molecular-histological correlations across 13 healthy tissues, and domain adaptation across scanners and stains.",
+      "intro_cn": "面向数字病理的开源平台与深度学习：细胞核与腺体分割、千兆像素全切片分类、13 种健康组织的分子-组织学关联，以及跨扫描仪与染色的域自适应。",
+      "highlights_en": [
+        "Open-source computational histopathology platform (IEEE Access 2021)",
+        "Molecular-histological correlations across 13 healthy tissues",
+        "Comprehensive review of digital and intelligent pathology (2025)"
+      ],
+      "highlights_cn": [
+        "开源计算病理平台（IEEE Access 2021）",
+        "13 种健康组织的分子-组织学关联",
+        "数字化与智能化病理综述（2025）"
+      ],
+      "papers": [
+        {"id": "access-2021", "type": "paper", "title": "An open source platform for computational histopathology", "venue": "IEEE Access", "year": 2021, "doi": "10.1109/ACCESS.2021.3080429", "pill": "IEEE Access 2021",
+         "bullets_en": ["Open-source platform for computational histopathology.", "Reused in multiple downstream studies."],
+         "bullets_cn": ["面向计算病理学的开源平台。", "被多项后续研究复用。"]},
+        {"id": "srep-2025-path", "type": "paper", "title": "Histology image analysis of 13 healthy tissues reveals molecular-histological correlations", "venue": "Scientific Reports", "year": 2025, "doi": "10.1038/s41598-025-11853-7", "pill": "Sci Rep 2025",
+         "bullets_en": ["Systematic histology image analysis of 13 healthy tissues.", "Quantitative molecular-histological correlations."],
+         "bullets_cn": ["13 种健康组织的系统性组织学图像分析。", "定量的分子-组织学关联。"]},
+        {"id": "intonc-2025", "type": "paper", "title": "Computational pathology: A comprehensive review of recent developments in digital and intelligent pathology", "venue": "Intelligent Oncology", "year": 2025, "doi": "10.1016/j.intonc.2025.03.004", "pill": "Intell Oncol 2025",
+         "bullets_en": ["Comprehensive review of digital and intelligent pathology.", "Roadmap from digitization to AI-driven diagnosis."],
+         "bullets_cn": ["数字化与智能化病理的全面综述。", "从数字化到 AI 驱动诊断的技术路线图。"]},
+        {"id": "spie-2017", "type": "paper", "title": "Evaluation of Nucleus Segmentation in Digital Pathology Images through Large Scale Image Synthesis", "venue": "SPIE Medical Imaging", "year": 2017, "doi": "", "pill": "SPIE 2017",
+         "bullets_en": ["Large-scale synthetic images with ground truth for segmentation evaluation.", "Systematic benchmarking of nucleus segmentation methods."],
+         "bullets_cn": ["带金标准的大规模合成图像用于分割评估。", "细胞核分割方法的系统化基准测试。"]},
+        {"id": "mbec-2023", "type": "paper", "title": "Expectation-Maximization algorithm leads to domain adaptation for a perineural invasion and nerve extraction task in whole slide digital pathology images", "venue": "Medical & Biological Engineering & Computing", "year": 2023, "doi": "10.1007/s11517-022-02711-z", "pill": "MBEC 2023",
+         "bullets_en": ["EM-based domain adaptation across scanners and stains.", "Perineural invasion detection and nerve extraction."],
+         "bullets_cn": ["基于 EM 算法的跨扫描仪、跨染色域自适应。", "神经周围侵犯检测与神经提取。"]},
+        {"id": "cvpr-2016", "type": "paper", "title": "Efficient Multiple Instance Convolutional Neural Networks for Gigapixel Resolution Image Classification", "venue": "IEEE CVPR", "year": 2016, "doi": "", "pill": "CVPR 2016",
+         "bullets_en": ["Multiple-instance CNNs for gigapixel whole-slide classification.", "Widely cited approach to whole-slide image analysis."],
+         "bullets_cn": ["面向千兆像素全切片分类的多示例 CNN。", "全切片图像分析的广被引用方法。"]},
+        {"id": "fonc-2022", "type": "paper", "title": "Deep Learning-Based Classification of Cancer Cell in Leptomeningeal Metastasis on Cytomorphologic Features of Cerebrospinal Fluid", "venue": "Frontiers in Oncology", "year": 2022, "doi": "10.3389/fonc.2022.821594", "pill": "Front Oncol 2022",
+         "bullets_en": ["Deep learning classification of cancer cells in cerebrospinal fluid.", "Cytomorphology-based decision support for leptomeningeal metastasis."],
+         "bullets_cn": ["脑脊液中肿瘤细胞的深度学习分类。", "基于细胞形态学的软脑膜转移决策支持。"]}
+      ]
+    },
+    {
+      "id": "others", "num": "05",
+      "kind_en": "By Application", "kind_cn": "按应用领域",
+      "title_en": "Other Clinical Areas", "title_cn": "其他临床领域",
+      "intro_en": "AI applied beyond the main pillars: nuclear medicine, critical care, pediatric ENT, pandemic imaging, and open-source virtual endoscopy.",
+      "intro_cn": "主要板块之外的 AI 应用：核医学、重症、儿童耳鼻喉、疫情影像，以及开源虚拟内镜。",
+      "highlights_en": ["End-to-end lesion detection in whole-body bone scintigraphy", "Risk stratification for acute kidney injury", "Open-source CT virtual endoscopy"],
+      "highlights_cn": ["全身骨扫描端到端病灶检测", "急性肾损伤风险分层", "开源 CT 虚拟内镜"],
+      "papers": [
+        {"id": "bioinf-2023", "type": "paper", "title": "An end-to-end multi-task system of automatic lesion detection and anatomical localization in whole-body bone scintigraphy by deep learning", "venue": "Bioinformatics", "year": 2023, "doi": "10.1093/bioinformatics/btac753", "pill": "Bioinformatics 2023",
+         "bullets_en": ["End-to-end lesion detection and anatomical localization in whole-body bone scans.", "Multi-task deep learning for nuclear medicine."],
+         "bullets_cn": ["全身骨扫描的端到端病灶检测与解剖定位。", "面向核医学的多任务深度学习。"]},
+        {"id": "atm-2021", "type": "paper", "title": "Development and validation of a risk stratification model for predicting the mortality of acute kidney injury in critical care patients", "venue": "Annals of Translational Medicine", "year": 2021, "doi": "10.21037/atm-20-5723", "pill": "ATM 2021",
+         "bullets_en": ["Risk stratification model for acute kidney injury in critical care.", "Development and validation on clinical data."],
+         "bullets_cn": ["重症患者急性肾损伤死亡率的风险分层模型。", "基于临床数据的开发与验证。"]},
+        {"id": "ent-2023", "type": "paper", "title": "基于 U-Net 网络的儿童腺样体及鼻咽气道图像分割", "venue": "临床耳鼻咽喉头颈外科杂志", "year": 2023, "doi": "10.13201/j.issn.2096-7993.2023.08.006", "pill": "临床耳鼻咽喉科 2023",
+         "bullets_en": ["U-Net segmentation of the pediatric adenoid and nasopharyngeal airway.", "Objective airway assessment for ENT planning."],
+         "bullets_cn": ["U-Net 分割儿童腺样体与鼻咽气道。", "为耳鼻喉科规划提供客观气道评估。"]},
+        {"id": "cc-2020", "type": "paper", "title": "COVID-19 targets the right lung.", "venue": "Critical Care", "year": 2020, "doi": "10.1186/s13054-020-03033-y", "pill": "Crit Care 2020",
+         "bullets_en": ["Quantitative imaging analysis reveals preferential right-lung involvement in COVID-19.", "Image-driven insight during the pandemic."],
+         "bullets_cn": ["定量影像分析揭示新冠右侧肺部优先受累。", "疫情期间基于影像的客观发现。"]},
+        {"id": "vciba-2022", "type": "paper", "title": "Open-source algorithm and software for computed tomography-based virtual pancreatoscopy and other applications", "venue": "Visual Computing for Industry, Biomedicine, and Art", "year": 2022, "doi": "10.1186/s42492-022-00116-1", "pill": "VCIBA 2022",
+         "bullets_en": ["Open-source CT virtual endoscopy (pancreatoscopy).", "Generalizable framework for virtual endoluminal views."],
+         "bullets_cn": ["开源 CT 虚拟内镜（胰管镜）。", "可推广的虚拟腔内视图框架。"]}
+      ]
+    },
+    {
+      "id": "seg", "num": "01",
+      "kind_en": "By Method", "kind_cn": "按方法",
+      "title_en": "Interactive 3D Image Segmentation", "title_cn": "交互式三维图像分割",
+      "intro_en": "From robust-statistics active contours to deep learning: interactive segmentation that clinicians can steer with a few strokes, culminating in Grow From Seed — a core module of 3D Slicer since 2014.",
+      "intro_cn": "从鲁棒统计活动轮廓到深度学习：医生只需少量笔画即可驾驭的交互式分割——代表成果 Grow From Seed 自 2014 年起成为 3D Slicer 核心模块。",
+      "highlights_en": [
+        "Grow From Seed — 3D Slicer core module since 2014",
+        "Robust-statistics multi-object segmentation (Medical Image Analysis 2012)",
+        "Scribble supervision, deep equilibrium models, active learning"
+      ],
+      "highlights_cn": [
+        "Grow From Seed——2014 年起为 3D Slicer 核心模块",
+        "鲁棒统计多目标分割（Medical Image Analysis 2012）",
+        "涂鸦监督、深度均衡模型、主动学习"
+      ],
+      "papers": [
+        {"id": "srep-2024", "type": "paper", "img": "images/RSS_MultiObjSeg1_500px.png", "title": "An effective and open source interactive 3D medical image segmentation solution", "venue": "Scientific Reports", "year": 2024, "doi": "10.1038/s41598-024-80206-7", "pill": "Sci Rep 2024",
+         "bullets_en": ["Grow From Seed: user-friendly interactive segmentation with a few strokes and real-time 3D feedback.", "Adopted as a core interactive segmentation module of 3D Slicer."],
+         "bullets_cn": ["Grow From Seed：少量笔画、实时三维反馈的友好交互分割。", "被 3D Slicer 采纳为核心交互分割模块。"]},
+        {"id": "media-2012-seg", "type": "paper", "title": "A 3D interactive multi-object segmentation tool using local robust statistics driven active contours", "venue": "Medical Image Analysis", "year": 2012, "doi": "", "pill": "MedIA 2012",
+         "bullets_en": ["Robust-statistics active contours for multi-object 3D segmentation.", "Foundation of the 3D Slicer segmentation modules."],
+         "bullets_cn": ["鲁棒统计活动轮廓的多目标三维分割。", "3D Slicer 分割模块的基础。"]},
+        {"id": "jvcir-2025", "type": "paper", "title": "AttenScribble: Attention-Enhanced Scribble Supervision for Medical Image Segmentation", "venue": "Journal of Visual Communication and Image Representation", "year": 2025, "doi": "10.1016/j.jvcir.2025.104476", "pill": "JVCIR 2025",
+         "bullets_en": ["Attention-enhanced scribble supervision reduces annotation cost.", "Weakly-supervised segmentation with scribble labels."],
+         "bullets_cn": ["注意力增强的涂鸦监督降低标注成本。", "基于涂鸦标签的弱监督分割。"]},
+        {"id": "cbm-2022", "type": "paper", "title": "An efficient deep equilibrium model for medical image segmentation", "venue": "Computers in Biology and Medicine", "year": 2022, "doi": "10.1016/j.compbiomed.2022.105831", "pill": "CBM 2022",
+         "bullets_en": ["Deep equilibrium models for memory-efficient segmentation.", "Infinite-depth behavior without storing intermediate states."],
+         "bullets_cn": ["显存高效的深度均衡模型分割。", "不存储中间状态的无限深度行为。"]},
+        {"id": "bspc-2026", "type": "paper", "title": "A multi-task learning network with boundary regression for automatic ultrasound image segmentation", "venue": "Biomedical Signal Processing and Control", "year": 2026, "doi": "10.1016/j.bspc.2025.108828", "pill": "BSPC 2026",
+         "bullets_en": ["Multi-task learning with boundary regression for ultrasound segmentation.", "Joint region and boundary supervision improves contour quality."],
+         "bullets_cn": ["边界回归多任务网络的超声图像分割。", "区域与边界联合监督提升轮廓质量。"]},
+        {"id": "cmbme-2025", "type": "paper", "title": "Cost-Effective Annotation: A Novel Deep Active Learning Approach for Automated Whole Breast Ultrasound Anatomy Segmentation", "venue": "中国生物医学工程年会（oral）", "year": 2025, "doi": "", "pill": "BME 年会 2025",
+         "bullets_en": ["Deep active learning cuts annotation cost for whole-breast ultrasound.", "Oral presentation at the Chinese Society of Biomedical Engineering annual meeting."],
+         "bullets_cn": ["深度主动学习降低全乳超声标注成本。", "中国生物医学工程年会口头报告。"]},
+        {"id": "imic-2014", "type": "paper", "title": "An Effective Interactive Medical Image Segmentation Method Using Fast GrowCut", "venue": "MICCAI Workshop on Interactive Medical Image Computing", "year": 2014, "doi": "", "pill": "MICCAI-IMIC 2014",
+         "bullets_en": ["Fast GrowCut for interactive segmentation.", "Early interactive segmentation work integrated into Slicer workflows."],
+         "bullets_cn": ["快速 GrowCut 交互式分割。", "较早集成进 Slicer 工作流的交互分割工作。"]}
+      ]
+    },
+    {
+      "id": "reg", "num": "02",
+      "kind_en": "By Method", "kind_cn": "按方法",
+      "title_en": "Deformable Image Registration", "title_cn": "形变图像配准",
+      "intro_en": "Registration from theory to modern generative models: filtering in the diffeomorphism group, Kalman perspectives on multi-atlas fusion, and diffusion-model / Mamba-based deformation vector field generation.",
+      "intro_cn": "从理论到生成式模型的配准研究：微分同胚群滤波、多图谱融合的卡尔曼视角，以及扩散模型与 Mamba 网络的形变向量场生成。",
+      "highlights_en": [
+        "Diffusion + Mamba networks for deformation vector fields (IJIST 2024)",
+        "Point-set registration in the diffeomorphism group (IEEE TIP 2012)",
+        "Kalman filtering perspective for multi-atlas segmentation (SIAM 2015)"
+      ],
+      "highlights_cn": [
+        "扩散 + Mamba 网络生成形变向量场（IJIST 2024）",
+        "微分同胚群中的点集配准（IEEE TIP 2012）",
+        "多图谱分割的卡尔曼滤波视角（SIAM 2015）"
+      ],
+      "papers": [
+        {"id": "ijist-2024", "type": "paper", "title": "Enhanced Deformation Vector Field Generation With Diffusion Models and Mamba Based Network for Registration Performance Enhancement", "venue": "International Journal of Imaging Systems and Technology", "year": 2024, "doi": "10.1002/ima.23171", "pill": "IJIST 2024",
+         "bullets_en": ["Diffusion models and Mamba-based networks generate deformation vector fields.", "Measurable gains in registration performance."],
+         "bullets_cn": ["扩散模型与 Mamba 网络生成形变向量场。", "配准性能获得可测提升。"]},
+        {"id": "tip-2012", "type": "paper", "title": "Filtering in the diffeomorphism group and the registration of point sets", "venue": "IEEE Transactions on Image Processing", "year": 2012, "doi": "", "pill": "IEEE TIP 2012",
+         "bullets_en": ["Registration of point sets via filtering in the diffeomorphism group.", "Theoretical grounding for smooth, invertible transformations."],
+         "bullets_cn": ["微分同胚群中的滤波方法用于点集配准。", "为光滑可逆变换提供理论基础。"]},
+        {"id": "siamsims-2015", "type": "paper", "title": "A Kalman filtering perspective for multi-atlas segmentation", "venue": "SIAM Journal on Imaging Sciences", "year": 2015, "doi": "", "pill": "SIAM 2015",
+         "bullets_en": ["Multi-atlas segmentation cast as a Kalman filtering problem.", "Principled fusion of atlas label propagation."],
+         "bullets_cn": ["将多图谱分割表述为卡尔曼滤波问题。", "有原则的图谱标签传播融合。"]},
+        {"id": "isbi-2014-reg", "type": "paper", "title": "Successive Convex Optimization for Point Set Registration", "venue": "IEEE ISBI", "year": 2014, "doi": "", "pill": "ISBI 2014",
+         "bullets_en": ["Successive convex optimization for non-rigid point set registration.", "Efficient solver with convergence guarantees."],
+         "bullets_cn": ["逐次凸优化的非刚性点集配准。", "高效求解并保证收敛。"]}
+      ]
+    },
+    {
+      "id": "syn", "num": "03",
+      "kind_en": "By Method", "kind_cn": "按方法",
+      "title_en": "Medical Image Synthesis", "title_cn": "医学图像合成",
+      "intro_en": "Synthesizing images with ground-truth annotations: diffusion probabilistic models that improve downstream segmentation, and long-standing work on realistic anatomy synthesis for validation.",
+      "intro_cn": "合成带金标准标注的医学图像：提升下游分割性能的扩散概率模型，以及长期积累的真实解剖合成验证工作。",
+      "highlights_en": [
+        "Diffusion models synthesize images with annotations (IJIST 2025)",
+        "Synthesis-driven gains in segmentation performance",
+        "Realistic subcortical anatomy with known deformations for validation"
+      ],
+      "highlights_cn": [
+        "扩散模型合成带标注图像（IJIST 2025）",
+        "以合成为手段的分割性能提升",
+        "已知形变的真实皮下结构合成用于验证"
+      ],
+      "papers": [
+        {"id": "ijist-2025", "type": "paper", "title": "Synthesizing Images with Annotations for Medical Image Segmentation Using Diffusion Probabilistic Model", "venue": "International Journal of Imaging Systems and Technology", "year": 2025, "doi": "10.1002/ima.70007", "pill": "IJIST 2025",
+         "bullets_en": ["Diffusion probabilistic models synthesize images together with annotations.", "Synthetic data improves segmentation performance."],
+         "bullets_cn": ["扩散概率模型同时合成图像与标注。", "合成数据提升分割性能。"]},
+        {"id": "bibm-2023", "type": "paper", "title": "Synthesizing with Diffusion model for improving medical image segmentation performance", "venue": "IEEE BIBM", "year": 2023, "doi": "", "pill": "BIBM 2023",
+         "bullets_en": ["Diffusion-based synthesis targeted at segmentation gains.", "Empirical study across segmentation tasks."],
+         "bullets_cn": ["面向分割增益的扩散合成。", "跨分割任务的实证研究。"]},
+        {"id": "spie-2017-syn", "type": "paper", "title": "Evaluation of Nucleus Segmentation in Digital Pathology Images through Large Scale Image Synthesis", "venue": "SPIE Medical Imaging", "year": 2017, "doi": "", "pill": "SPIE 2017",
+         "bullets_en": ["Large-scale synthetic images with ground truth for evaluation.", "Systematic benchmarking of nucleus segmentation."],
+         "bullets_cn": ["带金标准的大规模合成图像用于评估。", "细胞核分割的系统化基准测试。"]},
+        {"id": "mpmia-2012", "type": "paper", "title": "Synthesis of Realistic Subcortical Anatomy with Known Surface Deformations", "venue": "MICCAI Workshop on Mathematical Foundations of Computational Anatomy", "year": 2012, "doi": "", "pill": "MICCAI 2012",
+         "bullets_en": ["Realistic subcortical anatomy with known ground-truth deformations.", "Gold-standard testbed for shape analysis and registration."],
+         "bullets_cn": ["已知真实形变的皮下结构合成。", "形状分析与配准的金标准试验场。"]}
+      ]
+    },
+    {
+      "id": "shape", "num": "04",
+      "kind_en": "By Method", "kind_cn": "按方法",
+      "title_en": "Statistical Shape Analysis", "title_cn": "统计形状分析",
+      "intro_en": "Quantitative morphometry with validation: Poisson-equation shape analysis, multi-scale wavelet representations, depth-ordering, and the argument that shape analysis itself needs careful validation.",
+      "intro_cn": "带验证的定量形态度量：泊松方程形状分析、多尺度小波表示、深度排序，以及\"形状分析需要认真验证\"的方法学主张。",
+      "highlights_en": [
+        "3D Poisson morphometry with quantitative validation (MedIA 2016)",
+        "Multi-scale wavelet representation for arbitrary topology (MedIA 2012)",
+        "SPoM software released with Docker image"
+      ],
+      "highlights_cn": [
+        "三维泊松形态度量与定量验证（MedIA 2016）",
+        "任意拓扑的多尺度小波表示（MedIA 2012）",
+        "SPoM 软件开源并提供 Docker 镜像"
+      ],
+      "papers": [
+        {"id": "media-2016", "type": "paper", "img": "images/SPoMGraphicalAbstract.png", "title": "Statistical shape analysis using 3D Poisson equation — a quantitatively validated approach", "venue": "Medical Image Analysis", "year": 2016, "doi": "", "pill": "MedIA 2016",
+         "bullets_en": ["Novel morphometry based on the 3D Poisson equation.", "First quantitative validation framework for shape analysis methods."],
+         "bullets_cn": ["基于三维泊松方程的新型形态度量。", "首个形状分析方法的定量验证框架。"]},
+        {"id": "media-2012-shape", "type": "paper", "img": "images/waveletShapeGraphicalAbstract_500px.png", "title": "Multiscale 3D shape representation and segmentation with applications to hippocampal/caudate extraction from brain MRI", "venue": "Medical Image Analysis", "year": 2012, "doi": "", "pill": "MedIA 2012",
+         "bullets_en": ["Multi-scale wavelet decomposition for shapes of arbitrary topology.", "Applied to hippocampus and caudate extraction from MRI."],
+         "bullets_cn": ["任意拓扑形状的多尺度小波分解。", "应用于 MRI 海马与尾状核提取。"]},
+        {"id": "hbm-2014", "type": "paper", "title": "Shape analysis, a field in need of careful validation", "venue": "Human Brain Mapping", "year": 2014, "doi": "", "pill": "HBM 2014",
+         "bullets_en": ["Position paper: shape analysis requires careful validation.", "Proposes validation methodology for morphometry."],
+         "bullets_cn": ["立场文章：形状分析需要认真验证。", "提出形态度量的验证方法学。"]},
+        {"id": "mediasc-2015", "type": "paper", "title": "Shape analysis based on depth-ordering", "venue": "Medical Image Analysis", "year": 2015, "doi": "", "pill": "MedIA 2015",
+         "bullets_en": ["Depth-ordering gives shapes a natural inside-outside description.", "Topology-aware representation for complex geometries."],
+         "bullets_cn": ["深度排序赋予形状天然的内外描述。", "面向复杂几何的拓扑感知表示。"]},
+        {"id": "siamsims-2014", "type": "paper", "title": "Statistical shape analysis of neuroanatomical structures via level-set–based shape morphing", "venue": "SIAM Journal on Imaging Sciences", "year": 2014, "doi": "", "pill": "SIAM 2014",
+         "bullets_en": ["Level-set based shape morphing for population studies.", "Correspondence-free statistical analysis of neuroanatomy."],
+         "bullets_cn": ["基于水平集的形状渐变用于群体研究。", "无需对应的神经解剖统计分析。"]}
+      ]
+    },
+    {
+      "id": "radiomics", "num": "05",
+      "kind_en": "By Method", "kind_cn": "按方法",
+      "title_en": "Radiomics and Predictive Modeling", "title_cn": "影像组学与预测建模",
+      "intro_en": "Turning images into clinically actionable predictions: BRCA mutation triage from ultrasound, immunotherapy response in esophageal cancer and SCLC, MRI-based risk stratification, and quantitative PET harmonization.",
+      "intro_cn": "把图像转化为可执行的临床预测：超声 BRCA 突变分层、食管癌与小细胞肺癌免疫治疗响应、MRI 风险分层、PET 定量调和。",
+      "highlights_en": [
+        "Ultrasound radiomics predicts germline BRCA mutations (Cancer Imaging 2024)",
+        "Integrated clinical + radiomics outcomes in SCLC (JITC 2023)",
+        "Model-based PET SUV harmonization (Phenomics, in press)"
+      ],
+      "highlights_cn": [
+        "超声影像组学预测胚系 BRCA 突变（Cancer Imaging 2024）",
+        "小细胞肺癌临床+影像组学整合疗效预测（JITC 2023）",
+        "PET SUV 值模型化调和（Phenomics，在刊）"
+      ],
+      "papers": [
+        {"id": "cancerimg-2024", "type": "paper", "title": "Development and validation of ultrasound-based radiomics model to predict germline BRCA mutations in patients with breast cancer", "venue": "Cancer Imaging", "year": 2024, "doi": "10.1186/s40644-024-00676-w", "pill": "Cancer Imaging 2024",
+         "bullets_en": ["Ultrasound radiomics predicts germline BRCA mutations.", "Non-invasive triage for genetic testing."],
+         "bullets_cn": ["超声影像组学预测胚系 BRCA 突变。", "基因检测的无创分层。"]},
+        {"id": "tc-2023", "type": "paper", "title": "Contrast-enhanced CT-based radiomic analysis for determining the response to anti-programmed death-1 therapy in esophageal squamous cell carcinoma patients: A pilot study", "venue": "Thoracic Cancer", "year": 2023, "doi": "10.1111/1759-7714.15117", "pill": "Thoracic Cancer 2023",
+         "bullets_en": ["CT radiomics predicts anti-PD1 response in esophageal squamous cell carcinoma.", "Pilot study toward immunotherapy response prediction."],
+         "bullets_cn": ["CT 影像组学预测食管鳞癌抗 PD-1 治疗响应。", "面向免疫治疗响应预测的先导研究。"]},
+        {"id": "jitc-2023", "type": "paper", "title": "Assessing treatment outcomes of chemoimmunotherapy in extensive-stage small cell lung cancer: An integrated clinical and radiomics approach", "venue": "Journal for ImmunoTherapy of Cancer", "year": 2023, "doi": "10.1136/jitc-2023-007492", "pill": "JITC 2023",
+         "bullets_en": ["Integrated clinical and radiomics model for SCLC chemoimmunotherapy outcomes.", "Supports treatment selection in extensive-stage disease."],
+         "bullets_cn": ["临床与影像组学整合模型预测小细胞肺癌化疗免疫疗效。", "支持广泛期疾病的治疗选择。"]},
+        {"id": "ejro-2025", "type": "paper", "title": "3.0 T multi-parametric MRI combined with clinical features improve malignancy prediction of BI-RADS 4 lesions and preoperative prediction of Nottingham Prognostic Index", "venue": "European Journal of Radiology Open", "year": 2025, "doi": "", "pill": "EJRO 2025",
+         "bullets_en": ["Multi-parametric MRI plus clinical features refine BI-RADS 4 risk stratification.", "Preoperative prediction of the Nottingham Prognostic Index."],
+         "bullets_cn": ["多参数 MRI 联合临床特征细化 BI-RADS 4 风险分层。", "术前预测诺丁汉预后指数（NPI）。"]},
+        {"id": "phenomics-2026", "type": "paper", "title": "A Model-based Harmonization Strategy of Standard Uptake Values for Paired PET Studies", "venue": "Phenomics (in press)", "year": 2026, "doi": "", "pill": "Phenomics 2026",
+         "bullets_en": ["Model-based harmonization of SUV values for paired PET studies.", "Removes scanner and protocol variability in longitudinal PET."],
+         "bullets_cn": ["配对 PET 研究 SUV 值的模型化调和。", "消除纵向 PET 的扫描仪与协议差异。"]}
+      ]
+    }
+  ]
+}

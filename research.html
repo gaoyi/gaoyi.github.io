@@ -1,90 +1,217 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research — Yi Gao</title>
+  <meta name="description" content="Research of Yi Gao, organized by application (breast cancer, brain science, spine and orthopedics, computational pathology) and by method (segmentation, registration, synthesis, shape analysis, radiomics), plus open science and software.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
 
-    <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+<header class="site-header">
+  <div class="inner">
+    <span class="brand"><a href="index.html">Yi Gao</a></span>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="research.html">Research</a>
+      <a href="software.html">Open Science</a>
+      <a href="publications.html">Publications</a>
+      <a class="lang" href="researchCN.html">中文版</a>
+    </nav>
+  </div>
+</header>
 
-    <title>Yi Gao&#39;s homepage</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Yi Gao</h1>
-        <h2>--- Reseach and Projects</h2>
-        <a href="indexCN.html" class="button">中文版</a>
-        <!-- <a href="https://github.com/gaoyi" class="button">中文版</a> -->
+<main>
+  <section class="page-hero">
+    <div class="inner">
+      <p class="eyebrow">Pillar One · Research</p>
+      <h1 class="page-title">Research</h1>
+      <p class="page-sub">My work is organized in two parallel pillars: <b>research</b> — presented below both by clinical application and by method — and <a href="software.html"><b>open science and software</b></a>. The engine underneath is medical artificial intelligence, from mathematical modeling theory through open-source algorithms to clinical deployment and industrial translation.</p>
+      <div class="hero-pills">
+        <span class="pills-label">By Application</span>
+        <a class="badge badge-dark" href="research/breast.html">Breast Cancer</a>
+        <a class="badge badge-dark" href="research/brain.html">Brain Science</a>
+        <a class="badge badge-dark" href="research/spine.html">Spine &amp; Orthopedics</a>
+        <a class="badge badge-dark" href="research/pathology.html">Computational Pathology</a>
+        <a class="badge badge-dark" href="research/others.html">Other Clinical Areas</a>
       </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>  <a name="research-directions" class="anchor" href="#research-directions"><span class="octicon octicon-link"></span></a>Research Directions</h3>
-          
-          <p>My research focuses on medical artificial intelligence, with expertise spanning the entire pipeline from mathematical modeling theory to open-source algorithm software, clinical applications, and industrial transformation.</p>
-
-          <h4>Medical Image Computing and Analysis</h4>
-          <ul>
-            <li><b>Interactive 3D Medical Image Segmentation:</b> Developed the Grow From Seed interactive segmentation algorithm, which has become a core module in 3D Slicer, the world's largest open-source medical image computing software platform.</li>
-            <li><b>Statistical Shape Analysis:</b> Developed novel shape analysis methods based on 3D Poisson equation with quantitative validation framework.</li>
-            <li><b>Multi-scale Shape Representation:</b> Developed wavelet-based shape decomposition and reconstruction techniques for 3D shapes of arbitrary topology.</li>
-            <li><b>Medical Image Registration:</b> Developed algorithms for deformable image registration using diffusion models and Mamba-based networks.</li>
-          </ul>
-
-          <h4>AI for Medical Diagnosis and Screening</h4>
-          <ul>
-            <li><b>Breast Cancer Screening:</b> Developed AI-assisted automated breast ultrasound systems for large-scale screening, deployed in over 70 medical institutions serving more than 90,000 people.</li>
-            <li><b>Computational Pathology:</b> Developed deep learning models for digital pathology image analysis, including nucleus segmentation, gland segmentation, and cancer classification.</li>
-            <li><b>Radiomics and Predictive Modeling:</b> Developed radiomic analysis pipelines for predicting treatment response and prognosis in various cancers.</li>
-            <li><b>Medical Image Synthesis:</b> Developed diffusion probabilistic models for synthesizing medical images with annotations to improve segmentation performance.</li>
-          </ul>
-
-          <h4>Open Source Software and Algorithm Development</h4>
-          <ul>
-            <li><b>3D Slicer Integration:</b> Multiple algorithms integrated into 3D Slicer, including Robust Statistics Segmenter and Grow From Seed interactive segmentation.</li>
-            <li><b>Insight Toolkit (ITK) Contributions:</b> Spherical wavelet ITK filter and Conformal flattening ITK filter.</li>
-            <li><b>Open Source Platforms:</b> Developed computational histopathology platform and interactive 3D medical image segmentation solutions.</li>
-          </ul>
-
-          <h4>Clinical Translation and Industrial Applications</h4>
-          <ul>
-            <li><b>Medical Device Certification:</b> Developed "3D Breast Ultrasound Image Management Software" which obtained Class II Medical Device Registration Certificate - the first of its kind in China.</li>
-            <li><b>Clinical Impact:</b> Increased breast cancer detection rate from 0.5‰ to 3.13‰ through AI-assisted screening technology.</li>
-          </ul>
-        </section>
-
-        <aside id="sidebar">
-          <p><a href="index.html" class="button">Home</a></p>
-          <p><a href="software.html" class="button">Software</a></p>
-          <p><a href="research.html" class="button">Research</a></p>
-          <p><a href="publications.html" class="button">Publications</a></p>
-        </aside>
+      <div class="hero-pills">
+        <span class="pills-label">By Method</span>
+        <a class="badge badge-dark" href="research/seg.html">Interactive Segmentation</a>
+        <a class="badge badge-dark" href="research/reg.html">Registration</a>
+        <a class="badge badge-dark" href="research/syn.html">Image Synthesis</a>
+        <a class="badge badge-dark" href="research/shape.html">Shape Analysis</a>
+        <a class="badge badge-dark" href="research/radiomics.html">Radiomics</a>
       </div>
     </div>
+  </section>
 
+  <section class="band">
+    <div class="inner">
+      <p class="eyebrow">01 · By Application</p>
+      <h2 class="section-title" id="areas">By Application</h2>
+      <p class="section-sub">What clinical problems we solve, and the clinical outcome.</p>
+      <div class="grid-2">
 
+    <a class="card dir-card card-numbered" id="breast" href="research/breast.html">
+      <div class="card-num">01</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><path d="M4 19c2-1 3-3 3-6 0-3.5 2.5-6 5-6s5 2.5 5 6c0 3 1 5 3 6"/><path d="M12 2v2M6 4l1.5 1.5M18 4l-1.5 1.5"/></svg>
+      </div>
+      <h3>Breast Cancer</h3>
+      <ul>
+        <li><b>AI-assisted ABUS screening at scale:</b> automated breast ultrasound systems deployed in 70+ medical institutions, screening more than 90,000 people; detection rate raised from 0.5‰ to 3.13‰.</li>
+        <li><b>Remote-reading screening model:</b> prospective study across 46 community health centers in China (AJR 2024); lossy-compression scheme for remote screening of 3D volumetric ultrasound.</li>
+        <li><b>Medical device certification:</b> "3D Breast Ultrasound Image Management Software" obtained a Class II Medical Device Registration Certificate — the first of its kind in China.</li>
+        <li><b>Molecular prediction and treatment response:</b> explainable multi-task deep learning for molecular expression prediction from 3D whole-breast ultrasound; neoadjuvant treatment response assessment.</li>
+        <li><b>MRI quantification:</b> reproducible automated breast density measurement (fat-water decomposition MRI); sentinel lymph node metastasis prediction from DCE-MRI.</li>
+      </ul>
+    </a>
 
+    <a class="card dir-card card-numbered" id="brain" href="research/brain.html">
+      <div class="card-num">02</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-1 5.8V16a3 3 0 0 0 3 3h1M15 4a3 3 0 0 1 3 3 3 3 0 0 1 1 5.8V16a3 3 0 0 1-3 3h-1M9 12h2a2 2 0 1 0 2-2 2 2 0 1 1 2-2"/></svg>
+      </div>
+      <h3>Brain Science</h3>
+      <ul>
+        <li><b>Hippocampal morphology:</b> fine-scale shape analysis across 2,911 subjects (multi-dataset) and 552 healthy subjects aged 20–80; "bumps under the hippocampus" anatomy characterized.</li>
+        <li><b>Cerebellar reconstruction:</b> 3D digital reconstruction of the cerebellar cortex — lobule thickness, surface area, and layer architecture (Cerebellum 2022; reviewer: "an exceptional technical achievement").</li>
+        <li><b>Fluid transport modeling:</b> cerebrospinal and interstitial fluid transport via the glymphatic pathway modeled by optimal mass transport (NeuroImage cover highlight, 2017).</li>
+        <li><b>Clinical neuro AI:</b> MRI-based deep learning diagnosis of neonatal acute bilirubin encephalopathy; neurocognition after hydrocephalus treatment.</li>
+        <li><b>Ongoing:</b> respiration and sleep analysis, EEG analysis, and transcranial Doppler-based cerebral blood flow assessment.</li>
+      </ul>
+    </a>
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <a class="card dir-card card-numbered" id="spine" href="research/spine.html">
+      <div class="card-num">03</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><path d="M12 3v4M12 9v4M12 15v4"/><rect x="8" y="3" width="8" height="4" rx="1.5"/><rect x="8" y="9" width="8" height="4" rx="1.5"/><rect x="8" y="15" width="8" height="4" rx="1.5"/></svg>
+      </div>
+      <h3>Spine and Orthopedics</h3>
+      <ul>
+        <li><b>Surgical outcome simulation:</b> combining 3D body-surface scanning with CT volumetric data for ankylosing spondylitis surgery outcome simulation (IEEE ISBI 2024).</li>
+        <li><b>Thoracic spine enhancement:</b> imaging enhancement techniques for thoracic vertebrae.</li>
+        <li><b>Image stitching:</b> wide-field surface and volumetric image stitching for spinal applications.</li>
+        <li><b>Finite element analysis of bone structure</b> for surgical planning.</li>
+      </ul>
+      <p class="muted">Ongoing work in close collaboration with clinical spine surgery teams.</p>
+    </a>
 
-      ga('create', 'UA-50135439-1', 'gaoyi.github.io');
-      ga('send', 'pageview');
+    <a class="card dir-card card-numbered" id="pathology" href="research/pathology.html">
+      <div class="card-num">04</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1.2"/><circle cx="14" cy="9" r="1.2"/><circle cx="15" cy="14" r="1.2"/><circle cx="10" cy="15" r="1.2"/></svg>
+      </div>
+      <h3>Computational Pathology</h3>
+      <ul>
+        <li><b>Open platform:</b> an open-source platform for computational histopathology (IEEE Access 2021).</li>
+        <li><b>Molecular-histological correlation:</b> histology image analysis of 13 healthy tissues (Scientific Reports 2025).</li>
+        <li><b>Segmentation and classification:</b> nucleus segmentation, gland segmentation, prostate cancer classification; large-scale image synthesis for evaluation.</li>
+        <li><b>Review:</b> computational pathology — recent developments in digital and intelligent pathology (Intelligent Oncology 2025).</li>
+      </ul>
+    </a>
 
-    </script>
+    <a class="card dir-card card-numbered" id="others" href="research/others.html">
+      <div class="card-num">05</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 0 1 8.7 5M12 22a10 10 0 0 1-8.7-5M2.5 9h4M17.5 15h4"/></svg>
+      </div>
+      <h3>Other Clinical Areas</h3>
+      <ul>
+        <li><b>Multi-disease AI:</b> whole-body bone scintigraphy lesion detection; leptomeningeal metastasis classification on CSF cytomorphology; pediatric adenoid and nasopharyngeal airway segmentation.</li>
+        <li><b>Critical care and beyond:</b> risk stratification models for acute kidney injury; COVID-19 lung targets.</li>
+        <li><b>Cardiac imaging (earlier work):</b> left atrium, myocardium, and scar-tissue segmentation from MR/CT.</li>
+      </ul>
+    </a>
 
-  </body>
+  </div>
+
+      <p class="eyebrow">02 · By Method</p>
+      <h2 class="section-title" id="methods">By Method</h2>
+      <p class="section-sub">How we solve them — the algorithmic and technical contributions behind the applications.</p>
+      <div class="grid-2">
+
+    <a class="card dir-card card-numbered" id="seg" href="research/seg.html">
+      <div class="card-num">01</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M9 18v3M15 18v3M8 9h8M8 13h5"/></svg>
+      </div>
+      <h3>Interactive 3D Image Segmentation</h3>
+      <ul>
+        <li><b>Grow From Seed:</b> local-statistics driven interactive segmentation, a core module of 3D Slicer since 2014 (Scientific Reports 2024).</li>
+        <li><b>Robust Statistics Segmenter:</b> robust-statistics active contours for multi-object 3D segmentation (Medical Image Analysis 2012).</li>
+        <li><b>Learning-based segmentation:</b> attention-enhanced scribble supervision; deep equilibrium models; multi-task networks with boundary regression; deep active learning for annotation efficiency.</li>
+      </ul>
+      <p class="muted">Software released as open source — see Open Science and Software.</p>
+    </a>
+
+    <a class="card dir-card card-numbered" id="reg" href="research/reg.html">
+      <div class="card-num">02</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h16"/><path d="M9 4v16M15 4v16" opacity="0.4"/><circle cx="9" cy="12" r="2.5"/><circle cx="15" cy="6" r="2.5" opacity="0.4"/></svg>
+      </div>
+      <h3>Deformable Image Registration</h3>
+      <ul>
+        <li><b>Diffusion-model and Mamba-based networks</b> for deformation vector field generation and registration performance enhancement (IJIST 2024).</li>
+        <li><b>Point-set registration</b> via filtering in the diffeomorphism group (IEEE TIP 2012).</li>
+        <li><b>Atlas and shape-prior based registration</b> for multi-atlas segmentation (Kalman-filtering perspective, SIAM J. Imaging Sciences 2015).</li>
+      </ul>
+    </a>
+
+    <a class="card dir-card card-numbered" id="syn" href="research/syn.html">
+      <div class="card-num">03</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><rect x="3" y="5" width="8" height="8" rx="1.5"/><rect x="13" y="11" width="8" height="8" rx="1.5"/><path d="M11 9l2 2M9 13l4 4"/></svg>
+      </div>
+      <h3>Medical Image Synthesis</h3>
+      <ul>
+        <li><b>Distribution-preserving synthesis:</b> diffusion probabilistic models for synthesizing medical images <i>with annotations</i>, improving segmentation performance (IJIST 2025; IEEE BIBM 2023).</li>
+        <li><b>Synthesis for validation:</b> large-scale nucleus-segmentation evaluation through image synthesis (SPIE 2017).</li>
+      </ul>
+    </a>
+
+    <a class="card dir-card card-numbered" id="shape" href="research/shape.html">
+      <div class="card-num">04</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><ellipse cx="12" cy="12" rx="5" ry="9"/><ellipse cx="12" cy="12" rx="9" ry="5" opacity="0.4"/><circle cx="12" cy="12" r="2"/></svg>
+      </div>
+      <h3>Statistical Shape Analysis</h3>
+      <ul>
+        <li><b>3D Poisson-equation morphometry</b> with a quantitative validation framework (Medical Image Analysis 2016).</li>
+        <li><b>Multi-scale wavelet representation</b> for 3D shapes of arbitrary topology (Medical Image Analysis 2012).</li>
+        <li><b>Spherical wavelets and conformal flattening</b> — ITK filters for shape analysis on manifolds.</li>
+        <li><b>Validation methodology:</b> shape analysis as "a field in need of careful validation" (Human Brain Mapping 2014).</li>
+      </ul>
+      <p class="muted">Software: SPoM · multi-scale shape (see Open Science).</p>
+    </a>
+
+    <a class="card dir-card card-numbered" id="radiomics" href="research/radiomics.html">
+      <div class="card-num">05</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><path d="M4 20V10M9 20V4M14 20v-8M19 20V7"/><path d="M3 20h18"/></svg>
+      </div>
+      <h3>Radiomics and Predictive Modeling</h3>
+      <ul>
+        <li><b>Ultrasound radiomics</b> for predicting germline BRCA mutations in breast cancer (Cancer Imaging 2024).</li>
+        <li><b>Treatment response prediction:</b> anti-PD1 response in esophageal squamous cell carcinoma (Thoracic Cancer 2023); chemoimmunotherapy outcomes in extensive-stage small cell lung cancer (JITC 2023).</li>
+        <li><b>Quantitative imaging harmonization:</b> model-based harmonization of PET standard uptake values for paired studies (Phenomics, in press).</li>
+      </ul>
+    </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>Yi Gao · Shenzhen University</span>
+    <span><a href="publications.html">Publications</a> · <a href="software.html">Open Science</a> · gaoyi@gatech.edu</span>
+  </div>
+</footer>
+
+</body>
 </html>

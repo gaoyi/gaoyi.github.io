@@ -1,90 +1,217 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>研究 — 高毅</title>
+  <meta name="description" content="高毅的研究：按应用（乳腺癌、脑科学、骨科脊柱、计算病理学）与按方法（图像分割、配准、合成、形状分析、影像组学）两个维度组织，另有开源科学与软件板块。">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
 
-    <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+<header class="site-header">
+  <div class="inner">
+    <span class="brand"><a href="indexCN.html">高毅</a></span>
+    <nav class="site-nav">
+      <a href="indexCN.html">主页</a>
+      <a class="active" href="researchCN.html">研究</a>
+      <a href="softwareCN.html">开源与软件</a>
+      <a href="publicationsCN.html">文章列表</a>
+      <a class="lang" href="research.html">English</a>
+    </nav>
+  </div>
+</header>
 
-    <title>Yi Gao&#39;s homepage</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h1>研究课题</h1>
-        <h2>--- gaoyi@gatech.edu</h2>
-        <a href="index.html" class="button">English</a>
-        <!-- <a href="https://github.com/gaoyi" class="button">中文版</a> -->
+<main>
+  <section class="page-hero">
+    <div class="inner">
+      <p class="eyebrow">板块一 · 科研工作</p>
+      <h1 class="page-title">研究</h1>
+      <p class="page-sub">我的工作分为两大并列板块：<b>科研工作</b>——下面分别按应用领域和按方法两个维度呈现——以及<a href="softwareCN.html"><b>开源科学与软件</b></a>。底层引擎是医学人工智能：从数学建模理论、开源算法，到临床部署与产业转化的全链路。</p>
+      <div class="hero-pills">
+        <span class="pills-label">按应用领域</span>
+        <a class="badge badge-dark" href="research/breast.html">乳腺癌</a>
+        <a class="badge badge-dark" href="research/brain.html">脑科学</a>
+        <a class="badge badge-dark" href="research/spine.html">骨科脊柱</a>
+        <a class="badge badge-dark" href="research/pathology.html">计算病理学</a>
+        <a class="badge badge-dark" href="research/others.html">其他临床领域</a>
       </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>  <a name="research-directions" class="anchor" href="#research-directions"><span class="octicon octicon-link"></span></a>研究方向</h3>
-          
-          <p>我的研究专注于医学人工智能，具备从数学建模理论、开源算法软件、临床应用到产业转化的全链路能力。</p>
-
-          <h4>医学图像计算与分析</h4>
-          <ul>
-            <li><b>交互式三维医学图像分割：</b>开发了Grow From Seed交互式分割算法，成为全球最大的开源医学图像计算软件平台3D Slicer的核心模块。</li>
-            <li><b>统计形状分析：</b>开发了基于三维泊松方程的新型形状分析方法，并建立了定量验证框架。</li>
-            <li><b>多尺度形状表示：</b>开发了基于小波的形状分解与重建技术，适用于任意拓扑的三维形状。</li>
-            <li><b>医学图像配准：</b>开发了基于扩散模型和Mamba网络的形变图像配准算法。</li>
-          </ul>
-
-          <h4>人工智能辅助医学诊断与筛查</h4>
-          <ul>
-            <li><b>乳腺癌筛查：</b>开发了人工智能辅助的自动乳腺超声系统，用于大规模筛查，已在全国70多个医疗机构部署，服务超过9万人。</li>
-            <li><b>计算病理学：</b>开发了数字病理图像分析的深度学习模型，包括细胞核分割、腺体分割和癌症分类。</li>
-            <li><b>影像组学与预测建模：</b>开发了影像组学分析流程，用于预测多种癌症的治疗反应和预后。</li>
-            <li><b>医学图像合成：</b>开发了扩散概率模型，用于合成带标注的医学图像以提高分割性能。</li>
-          </ul>
-
-          <h4>开源软件与算法开发</h4>
-          <ul>
-            <li><b>3D Slicer集成：</b>多个算法集成到3D Slicer中，包括Robust Statistics Segmenter和Grow From Seed交互式分割。</li>
-            <li><b>Insight Toolkit (ITK)贡献：</b>球面小波ITK滤波器和共形球映射ITK滤波器。</li>
-            <li><b>开源平台：</b>开发了计算病理学平台和交互式三维医学图像分割解决方案。</li>
-          </ul>
-
-          <h4>临床转化与产业应用</h4>
-          <ul>
-            <li><b>医疗器械认证：</b>开发了"三维乳腺超声影像管理软件"，获得国家二类医疗器械注册证，是国内首个获此类认证的三维乳腺超声影像管理软件。</li>
-            <li><b>临床影响：</b>通过人工智能辅助筛查技术，将乳腺癌的筛查检出率从0.5‰提高到3.13‰。</li>
-          </ul>
-        </section>
-
-        <aside id="sidebar">
-          <p><a href="indexCN.html" class="button">主页</a></p>
-          <p><a href="softwareCN.html" class="button">软件</a></p>
-          <p><a href="researchCN.html" class="button">研究课题</a></p>
-          <p><a href="publicationsCN.html" class="button">文章列表</a></p>
-        </aside>
+      <div class="hero-pills">
+        <span class="pills-label">按方法</span>
+        <a class="badge badge-dark" href="research/seg.html">交互式三维分割</a>
+        <a class="badge badge-dark" href="research/reg.html">形变图像配准</a>
+        <a class="badge badge-dark" href="research/syn.html">医学图像合成</a>
+        <a class="badge badge-dark" href="research/shape.html">统计形状分析</a>
+        <a class="badge badge-dark" href="research/radiomics.html">影像组学</a>
       </div>
     </div>
+  </section>
 
+  <section class="band">
+    <div class="inner">
+      <p class="eyebrow">01 · 按应用领域</p>
+      <h2 class="section-title" id="areas">按应用领域</h2>
+      <p class="section-sub">解决什么临床问题，落地成效是什么。</p>
+      <div class="grid-2">
 
+    <a class="card dir-card card-numbered" id="breast" href="research/breast.html">
+      <div class="card-num">01</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><path d="M4 19c2-1 3-3 3-6 0-3.5 2.5-6 5-6s5 2.5 5 6c0 3 1 5 3 6"/><path d="M12 2v2M6 4l1.5 1.5M18 4l-1.5 1.5"/></svg>
+      </div>
+      <h3>乳腺癌</h3>
+      <ul>
+        <li><b>大规模 AI 辅助 ABUS 筛查：</b>自动乳腺超声系统在全国 70 多个医疗机构部署，筛查超 9 万人，检出率从 0.5‰ 提高到 3.13‰。</li>
+        <li><b>远程阅片筛查模式：</b>覆盖全国 46 个社区卫生中心的前瞻性研究（AJR 2024）；面向远程筛查的三维容积超声有损压缩方案。</li>
+        <li><b>医疗器械认证：</b>"三维乳腺超声影像管理软件"获国家二类医疗器械注册证，为国内首个该类别软件。</li>
+        <li><b>分子预测与疗效评估：</b>基于三维全乳超声的可解释多任务深度学习分子表达预测；新辅助治疗疗效评估。</li>
+        <li><b>MRI 定量：</b>可重复的自动乳腺密度测量（脂肪-水分解 MRI）；基于 DCE-MRI 的前哨淋巴结转移预测。</li>
+      </ul>
+    </a>
 
+    <a class="card dir-card card-numbered" id="brain" href="research/brain.html">
+      <div class="card-num">02</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-1 5.8V16a3 3 0 0 0 3 3h1M15 4a3 3 0 0 1 3 3 3 3 0 0 1 1 5.8V16a3 3 0 0 1-3 3h-1M9 12h2a2 2 0 1 0 2-2 2 2 0 1 1 2-2"/></svg>
+      </div>
+      <h3>脑科学</h3>
+      <ul>
+        <li><b>海马精细形态学：</b>2,911 名受试者（多数据集）与 552 名 20–80 岁健康人的精细形态分析；刻画海马下方的精细解剖结构。</li>
+        <li><b>小脑三维重建：</b>小脑皮质的数字三维重建——小叶厚度、表面积与分层结构（Cerebellum 2022，审稿人评价"非凡的技术成就"）。</li>
+        <li><b>流体运输建模：</b>以最优质量传输建模脑脊液与组织间隙液的类淋巴通路运输（NeuroImage 2017 封面亮点）。</li>
+        <li><b>临床神经 AI：</b>新生儿急性胆红素脑病的 MRI 深度学习诊断；脑积水术后脑室体积与神经认知关联。</li>
+        <li><b>进行中：</b>呼吸与睡眠分析、脑电（EEG）分析、经颅多普勒（TCD）脑血流评估。</li>
+      </ul>
+    </a>
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <a class="card dir-card card-numbered" id="spine" href="research/spine.html">
+      <div class="card-num">03</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><path d="M12 3v4M12 9v4M12 15v4"/><rect x="8" y="3" width="8" height="4" rx="1.5"/><rect x="8" y="9" width="8" height="4" rx="1.5"/><rect x="8" y="15" width="8" height="4" rx="1.5"/></svg>
+      </div>
+      <h3>骨科脊柱</h3>
+      <ul>
+        <li><b>手术效果模拟：</b>三维体表扫描与 CT 容积数据相结合，用于强直性脊柱炎手术效果模拟（IEEE ISBI 2024）。</li>
+        <li><b>胸椎增强：</b>面向胸椎的成像增强技术。</li>
+        <li><b>图像拼接：</b>面向脊柱应用的大视场体表与容积图像拼接。</li>
+        <li><b>骨结构有限元分析</b>，用于手术规划。</li>
+      </ul>
+      <p class="muted">相关工作与脊柱外科临床团队深度合作推进中。</p>
+    </a>
 
-      ga('create', 'UA-50135439-1', 'gaoyi.github.io');
-      ga('send', 'pageview');
+    <a class="card dir-card card-numbered" id="pathology" href="research/pathology.html">
+      <div class="card-num">04</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r="1.2"/><circle cx="14" cy="9" r="1.2"/><circle cx="15" cy="14" r="1.2"/><circle cx="10" cy="15" r="1.2"/></svg>
+      </div>
+      <h3>计算病理学</h3>
+      <ul>
+        <li><b>开源平台：</b>面向计算病理学的开源平台（IEEE Access 2021）。</li>
+        <li><b>分子-组织学关联：</b>13 种健康组织的组织学图像分析（Scientific Reports 2025）。</li>
+        <li><b>分割与分类：</b>细胞核分割、腺体分割、前列腺癌分级；大规模图像合成用于方法评估。</li>
+        <li><b>综述：</b>计算病理学——数字化与智能化病理的最新进展（Intelligent Oncology 2025）。</li>
+      </ul>
+    </a>
 
-    </script>
+    <a class="card dir-card card-numbered" id="others" href="research/others.html">
+      <div class="card-num">05</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2a10 10 0 0 1 8.7 5M12 22a10 10 0 0 1-8.7-5M2.5 9h4M17.5 15h4"/></svg>
+      </div>
+      <h3>其他临床领域</h3>
+      <ul>
+        <li><b>多病种 AI：</b>全身骨扫描病灶检测；脑脊液细胞学肿瘤细胞分类；儿童腺样体及鼻咽气道分割。</li>
+        <li><b>重症与其他：</b>急性肾损伤风险分层模型；新冠肺部受累分析。</li>
+        <li><b>心脏影像（早期工作）：</b>左心房、心肌与疤痕组织的 MR/CT 分割。</li>
+      </ul>
+    </a>
 
-  </body>
+  </div>
+
+      <p class="eyebrow">02 · 按方法</p>
+      <h2 class="section-title" id="methods">按方法</h2>
+      <p class="section-sub">怎么解决——支撑各应用领域的算法与技术贡献。</p>
+      <div class="grid-2">
+
+    <a class="card dir-card card-numbered" id="seg" href="research/seg.html">
+      <div class="card-num">01</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M9 18v3M15 18v3M8 9h8M8 13h5"/></svg>
+      </div>
+      <h3>交互式三维图像分割</h3>
+      <ul>
+        <li><b>Grow From Seed：</b>基于局部统计的交互式分割，2014 年起为 3D Slicer 核心模块（Scientific Reports 2024）。</li>
+        <li><b>Robust Statistics Segmenter：</b>鲁棒统计活动轮廓的多目标三维分割（Medical Image Analysis 2012）。</li>
+        <li><b>学习方法：</b>注意力增强的涂鸦监督；深度均衡模型；边界回归多任务网络；面向标注效率的深度主动学习。</li>
+      </ul>
+      <p class="muted">软件全部开源——见开源科学与软件板块。</p>
+    </a>
+
+    <a class="card dir-card card-numbered" id="reg" href="research/reg.html">
+      <div class="card-num">02</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h16"/><path d="M9 4v16M15 4v16" opacity="0.4"/><circle cx="9" cy="12" r="2.5"/><circle cx="15" cy="6" r="2.5" opacity="0.4"/></svg>
+      </div>
+      <h3>形变图像配准</h3>
+      <ul>
+        <li><b>扩散模型与 Mamba 网络</b>用于形变向量场生成与配准性能增强（IJIST 2024）。</li>
+        <li><b>点集配准：</b>微分同胚群中的滤波方法（IEEE TIP 2012）。</li>
+        <li><b>图谱与形状先验配准</b>：多图谱分割的卡尔曼滤波视角（SIAM J. Imaging Sciences 2015）。</li>
+      </ul>
+    </a>
+
+    <a class="card dir-card card-numbered" id="syn" href="research/syn.html">
+      <div class="card-num">03</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><rect x="3" y="5" width="8" height="8" rx="1.5"/><rect x="13" y="11" width="8" height="8" rx="1.5"/><path d="M11 9l2 2M9 13l4 4"/></svg>
+      </div>
+      <h3>医学图像合成</h3>
+      <ul>
+        <li><b>保持分布的合成：</b>扩散概率模型合成<b>带标注</b>的医学图像，提升分割性能（IJIST 2025；IEEE BIBM 2023）。</li>
+        <li><b>面向验证的合成：</b>通过大规模图像合成评估细胞核分割（SPIE 2017）。</li>
+      </ul>
+    </a>
+
+    <a class="card dir-card card-numbered" id="shape" href="research/shape.html">
+      <div class="card-num">04</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><ellipse cx="12" cy="12" rx="5" ry="9"/><ellipse cx="12" cy="12" rx="9" ry="5" opacity="0.4"/><circle cx="12" cy="12" r="2"/></svg>
+      </div>
+      <h3>统计形状分析</h3>
+      <ul>
+        <li><b>三维泊松方程形态度量</b>与定量验证框架（Medical Image Analysis 2016）。</li>
+        <li><b>多尺度小波表示</b>：适用于任意拓扑的三维形状（Medical Image Analysis 2012）。</li>
+        <li><b>球面小波与共形映射</b>：流形上形状分析的 ITK 滤波器。</li>
+        <li><b>验证方法学：</b>"形状分析是一个需要认真验证的领域"（Human Brain Mapping 2014）。</li>
+      </ul>
+      <p class="muted">软件：SPoM · 多尺度形状（见开源板块）。</p>
+    </a>
+
+    <a class="card dir-card card-numbered" id="radiomics" href="research/radiomics.html">
+      <div class="card-num">05</div>
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#185fa5" stroke-width="1.6"><path d="M4 20V10M9 20V4M14 20v-8M19 20V7"/><path d="M3 20h18"/></svg>
+      </div>
+      <h3>影像组学与预测建模</h3>
+      <ul>
+        <li><b>超声影像组学</b>预测乳腺癌胚系 BRCA 突变（Cancer Imaging 2024）。</li>
+        <li><b>治疗响应预测：</b>食管鳞癌抗 PD-1 治疗响应（Thoracic Cancer 2023）；广泛期小细胞肺癌化疗免疫联合疗效（JITC 2023）。</li>
+        <li><b>定量成像调和：</b>面向配对 PET 研究的 SUV 值模型化调和（Phenomics，在刊）。</li>
+      </ul>
+    </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <span>高毅 · 深圳大学</span>
+    <span><a href="publicationsCN.html">文章列表</a> · <a href="softwareCN.html">开源与软件</a> · gaoyi@gatech.edu</span>
+  </div>
+</footer>
+
+</body>
 </html>
