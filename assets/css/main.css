@@ -267,6 +267,13 @@ img { max-width: 100%; height: auto; }
 }
 .card .card-img img { width: 100%; display: block; }
 .card .card-img img.small { width: auto; margin: 0 auto; }
+/* paper first-page screenshots: keep the 640x300 card slot, show the title area */
+.card .card-img img.paper {
+  aspect-ratio: 640 / 300;
+  object-fit: cover;
+  object-position: top center;
+  background: #fff;
+}
 
 /* numbered research/method cards */
 .card-numbered .card-num {

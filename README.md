@@ -8,7 +8,7 @@
 
 | 文件 | 内容 |
 |------|------|
-| `index.html` / `indexCN.html` | 首页：深色 hero、数据带、简介与新闻、代表性成果、研究方向卡 |
+| `index.html` / `indexEN.html` | 首页（**`index.html` 为中文，是默认落地页**；`indexEN.html` 为英文）：深色 hero、数据带、简介与新闻、代表性成果、研究方向卡 |
 | `research.html` / `researchCN.html` | 板块一·Research 总览：banner 内两排导航胶囊（按应用/按方法），全部卡片可点击进入子页面 |
 | `research/*.html` / `research/*CN.html` | 10 个子领域页面（**由脚本生成，不要手改**）：顶部综述卡 + 胶囊导航 + 每篇论文一张带图卡片 |
 | `software.html` / `softwareCN.html` | 板块二·Open Science and Software：开源社区贡献与六个软件项目 |
@@ -17,17 +17,21 @@
 | `data/areas.json` | 子领域数据（各领域的代表论文、要点、图片；**改这里再跑 build_areas.py**） |
 | `tools/build_pubs.py` | 论文列表页生成脚本 |
 | `tools/build_areas.py` | 子领域页面生成脚本 |
+| `tools/render_paper_shots.py` | 批量把论文 PDF 首页渲染成卡片截图（`images/areas/<id>.jpg`） |
 | `tools/extract_pubs.py` | 一次性迁移工具（从旧版 HTML 提取，平常不用） |
 | `images/areas/` | 子领域论文配图（现为占位 SVG，可替换） |
 
 **信息架构**：两大并列板块——①Research（banner 两排胶囊分别导航"按应用"5 个子页与"按方法"5 个子页；应用讲临床问题与落地成效，方法讲算法技术贡献）②Open Science and Software。
 
-## 子领域论文配图（替换占位图）
+## 子领域论文配图
 
-每篇论文卡片当前用自动生成的占位图（深色 + 期刊年份标注）。换成真实图形摘要：
-1. 把图片放到 `images/areas/`，文件名 = 论文 id（如 `ajr-2024.png`，支持 png/jpg/webp）；
-2. 重新运行 `python tools/build_areas.py`；
-3. 脚本自动优先使用同名真实图片，占位图保留但不引用。
+每张论文卡片使用该文 PDF 首页的截图（`images/areas/<论文id>.jpg`），卡片内按 640×300 顶部裁切显示刊名、标题与作者：
+
+1. 生成/更新截图：`python tools/render_paper_shots.py`（映射表在脚本内，源 PDF 在 `D:\usr\01_work\06_gth818nWrite\manuscript\40_published`）；
+2. 重新运行 `python tools/build_areas.py`，脚本自动优先使用同名真实图片（jpg/png/webp），缺图时退回占位 SVG。
+3. 裁切规则在 `assets/css/main.css` 的 `.card .card-img img.paper`。
+
+**未发表不显示**：`tools/build_areas.py` 的 `is_published()` 会过滤掉 `"type": "project"`（进行中）与 `venue` 含 `in press`／`在刊` 的条目——数据仍留在 `data/areas.json`，见刊后把 `type` 改成 `paper`、`venue` 写成正式卷期或补 DOI，重跑脚本即可上站。
 
 ## 日常维护
 
@@ -50,11 +54,13 @@ python tools/build_pubs.py
 
 ### 改首页 / 研究页 / 软件页
 
-直接编辑对应 HTML，双语页面（`xxx.html` 与 `xxxCN.html`）记得同步修改。
+首页、研究总览、软件页直接编辑对应 HTML，双语页面记得同步修改：`index.html`（中）↔ `indexEN.html`（英）、`researchCN.html` ↔ `research.html`、`softwareCN.html` ↔ `software.html`。
+
+**语言与链接约定**：`index.html` 是中文首页（默认落地页）；中文页面的所有导航一律指向 `*CN.html`，英文页面指向英文页，语言切换按钮负责跨语言跳转。`tools/build_areas.py`、`tools/build_pubs.py` 的模板里已按此约定写死。
 
 ### 换图片
 
-- 个人照片：替换 `images/photo-placeholder.svg` 为真实照片（如 `images/photo.jpg`），并修改 `index.html` / `indexCN.html` 中的 `<img src>`。
+- 个人照片：替换 `images/photo-placeholder.svg` 为真实照片（如 `images/photo.jpg`），并修改 `index.html` / `indexEN.html` 中的 `<img src>`。
 - ABUS 成果图：替换 `images/feature-placeholder.svg`。
 - 建议每张图压到 300KB 以内。
 

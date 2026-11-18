@@ -26,8 +26,10 @@ LANGS = {
     "en": {
         "file_suffix": ".html", "lang": "en",
         "brand": "Yi Gao", "brand_sub": "Medical AI × Clinical Translation",
-        "nav": [("index.html", "Home"), ("research.html", "Research"),
+        "nav": [("indexEN.html", "Home"), ("research.html", "Research"),
                 ("software.html", "Open Science"), ("publications.html", "Publications")],
+        "back_href": "../research.html",
+        "footer": ("../publications.html", "../software.html"),
         "lang_switch": ("CN", "{id}CN.html"),
         "back_label": "← All research areas",
         "overview_title": "Overview",
@@ -38,8 +40,10 @@ LANGS = {
     "zh": {
         "file_suffix": "CN.html", "lang": "zh-CN",
         "brand": "高毅", "brand_sub": "医学人工智能 × 临床转化",
-        "nav": [("index.html", "主页"), ("research.html", "研究"),
-                ("software.html", "开源与软件"), ("publications.html", "文章列表")],
+        "nav": [("index.html", "主页"), ("researchCN.html", "研究"),
+                ("softwareCN.html", "开源与软件"), ("publicationsCN.html", "文章列表")],
+        "back_href": "../researchCN.html",
+        "footer": ("../publicationsCN.html", "../softwareCN.html"),
         "lang_switch": ("EN", "{id}.html"),
         "back_label": "← 返回研究总览",
         "overview_title": "综述",
@@ -65,7 +69,7 @@ TEMPLATE = """<!DOCTYPE html>
 <header class="site-header">
   <div class="inner">
     <span class="brand">
-      <a href="../index.html">{brand}</a>
+      <a href="{home_href}">{brand}</a>
       <span class="brand-sub">{brand_sub}</span>
     </span>
     <nav class="site-nav">
@@ -81,7 +85,7 @@ TEMPLATE = """<!DOCTYPE html>
       <p class="eyebrow">{kind} · {num}</p>
       <h1 class="page-title">{title}</h1>
       <p class="page-sub">{intro}</p>
-      <p style="margin:18px 0 0;"><a class="text-link" href="../research.html">{back_label}</a></p>
+      <p style="margin:18px 0 0;"><a class="text-link" href="{back_href}">{back_label}</a></p>
     </div>
   </section>
 
@@ -111,7 +115,7 @@ TEMPLATE = """<!DOCTYPE html>
 <footer class="site-footer">
   <div class="inner">
     <span>{footer_org}</span>
-    <span><a href="../publications.html">{fl_pubs}</a> · <a href="../software.html">{fl_soft}</a> · gaoyi@gatech.edu</span>
+    <span><a href="{fl_pubs_href}">{fl_pubs}</a> · <a href="{fl_soft_href}">{fl_soft}</a> · gaoyi@gatech.edu</span>
   </div>
 </footer>
 
@@ -140,6 +144,16 @@ def placeholder_svg(paper: dict) -> str:
   <text x="320" y="224" font-family="'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#a9b8c2" text-anchor="middle">Figure to come · 配图待补</text>
 </svg>
 '''
+
+
+def is_published(paper: dict) -> bool:
+    """Hide cards that are not published yet: ongoing projects and in-press papers."""
+    if paper.get("type") == "project":
+        return False
+    v = paper.get("venue", "").lower()
+    if "in press" in v or "在刊" in v or "未发表" in v:
+        return False
+    return True
 
 
 def resolve_img(paper: dict) -> str:
@@ -173,9 +187,12 @@ def render_card(paper: dict, idx: int, L: dict) -> str:
     if paper.get("type") == "project":
         status = f'<span class="badge ghost">{L["ongoing"]}</span>'
         link_badge = status
+    # real rasters in images/areas are paper first-page screenshots -> wide top crop
+    cls = (' class="paper"' if img.startswith("../images/areas/")
+           and img.lower().endswith((".jpg", ".jpeg", ".png")) else "")
     return f'''        <div class="card proj-card card-numbered" id="{paper["id"]}">
       <div class="card-num">{idx:02d}</div>
-      <div class="card-img"><img src="{img}" alt="{esc(paper["title"][:80])}"></div>
+      <div class="card-img"><img{cls} src="{img}" alt="{esc(paper["title"][:80])}"></div>
       <h3>{title_html}</h3>
       <p class="muted">{esc(paper["venue"])} · {paper["year"]}</p>
       <ul>
@@ -199,16 +216,17 @@ def build_page(area: dict, lang: str) -> str:
     )
 
     highlights = "\n".join(f"          <li>{h}</li>" for h in area[f"highlights_{lang_key}"])
+    papers = [p for p in area["papers"] if is_published(p)]
     pills = "\n".join(
         f'        <a class="badge" href="#{p["id"]}">{esc(p["pill"])}</a>'
-        for p in area["papers"]
+        for p in papers
     )
-    paper_cards = "\n\n".join(render_card(p, i + 1, L) for i, p in enumerate(area["papers"]))
+    paper_cards = "\n\n".join(render_card(p, i + 1, L) for i, p in enumerate(papers))
 
     fl_pubs = "Publications" if lang == "en" else "文章列表"
     fl_soft = "Open Science" if lang == "en" else "开源与软件"
     footer_org = "Yi Gao · Shenzhen University" if lang == "en" else "高毅 · 深圳大学"
-    papers_eyebrow = f'{len(area["papers"]):02d} · {L["papers_title"]}'
+    papers_eyebrow = f'{len(papers):02d} · {L["papers_title"]}'
 
     lang_href = L["lang_switch"][1].format(id=area["id"])
 
@@ -221,6 +239,8 @@ def build_page(area: dict, lang: str) -> str:
         papers_eyebrow=papers_eyebrow, papers_title=L["papers_title"],
         papers_sub=L["papers_sub"], paper_cards=paper_cards,
         footer_org=footer_org, fl_pubs=fl_pubs, fl_soft=fl_soft,
+        home_href="../" + L["nav"][0][0], back_href=L["back_href"],
+        fl_pubs_href=L["footer"][0], fl_soft_href=L["footer"][1],
     )
 
 
@@ -228,11 +248,13 @@ def main() -> None:
     data = json.loads(DATA.read_text(encoding="utf-8"))
     OUT_DIR.mkdir(exist_ok=True)
     for area in data["areas"]:
+        shown = sum(1 for p in area["papers"] if is_published(p))
+        hidden = len(area["papers"]) - shown
         for lang in ("en", "zh"):
             html = build_page(area, lang)
             out = OUT_DIR / (area["id"] + LANGS[lang]["file_suffix"])
             out.write_text(html, encoding="utf-8")
-        print(f"  {area['id']}: {len(area['papers'])} cards")
+        print(f"  {area['id']}: {shown} cards" + (f" ({hidden} unpublished hidden)" if hidden else ""))
     print(f"Done: {len(data['areas'])} areas x 2 languages -> {OUT_DIR}")
 
 
