@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" width="100%" role="img">
+<title>Breast cancer detection rate: our model vs benchmarks</title>
+<desc>Cancers detected per 1,000 women screened (‰)</desc>
+<rect width="1200" height="840" fill="#0b1d2e"/>
+<g fill="#3a5a70" opacity="0.45">
+<circle cx="60" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="60" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="60" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="60" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="60" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="60" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="60" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="60" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="60" cy="784" r="1.4" opacity="0.28"/>
+<circle cx="156" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="156" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="156" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="156" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="156" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="156" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="156" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="156" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="156" cy="784" r="1.4" opacity="0.28"/>
+<circle cx="252" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="252" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="252" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="252" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="252" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="252" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="252" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="252" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="252" cy="784" r="1.4" opacity="0.28"/>
+<circle cx="348" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="348" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="348" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="348" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="348" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="348" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="348" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="348" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="348" cy="784" r="1.4" opacity="0.28"/>
+<circle cx="444" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="444" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="444" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="444" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="444" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="444" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="444" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="444" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="444" cy="784" r="1.4" opacity="0.28"/>
+<circle cx="540" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="540" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="540" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="540" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="540" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="540" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="540" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="540" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="540" cy="784" r="1.4" opacity="0.28"/>
+<circle cx="636" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="636" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="636" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="636" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="636" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="636" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="636" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="636" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="636" cy="784" r="1.4" opacity="0.28"/>
+<circle cx="732" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="732" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="732" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="732" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="732" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="732" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="732" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="732" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="732" cy="784" r="1.4" opacity="0.28"/>
+<circle cx="828" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="828" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="828" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="828" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="828" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="828" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="828" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="828" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="828" cy="784" r="1.4" opacity="0.28"/>
+<circle cx="924" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="924" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="924" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="924" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="924" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="924" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="924" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="924" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="924" cy="784" r="1.4" opacity="0.28"/>
+<circle cx="1020" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="1020" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="1020" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="1020" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="1020" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="1020" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="1020" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="1020" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="1020" cy="784" r="1.4" opacity="0.28"/>
+<circle cx="1116" cy="48" r="1.4" opacity="0.28"/>
+<circle cx="1116" cy="140" r="1.4" opacity="0.28"/>
+<circle cx="1116" cy="232" r="1.4" opacity="0.28"/>
+<circle cx="1116" cy="324" r="1.4" opacity="0.28"/>
+<circle cx="1116" cy="416" r="1.4" opacity="0.28"/>
+<circle cx="1116" cy="508" r="1.4" opacity="0.28"/>
+<circle cx="1116" cy="600" r="1.4" opacity="0.28"/>
+<circle cx="1116" cy="692" r="1.4" opacity="0.28"/>
+<circle cx="1116" cy="784" r="1.4" opacity="0.28"/>
+</g>
+<text x="48" y="66" font-family="Georgia, 'Times New Roman', 'Songti SC', SimSun, serif" font-size="38" fill="#ffffff">Breast cancer detection rate: our model vs benchmarks</text>
+<text x="48" y="104" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="21" fill="#a9b8c2">Cancers detected per 1,000 women screened (‰)<tspan fill="#ffb35c">  ·  amber = our studies</tspan></text>
+<line x1="452.0" y1="192" x2="452.0" y2="670" stroke="#1b3247" stroke-width="1"/>
+<text x="452.0" y="182" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#5f7c8e" text-anchor="middle">0</text>
+<line x1="594.2222222222222" y1="192" x2="594.2222222222222" y2="670" stroke="#1b3247" stroke-width="1"/>
+<text x="594.2222222222222" y="182" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#5f7c8e" text-anchor="middle">1</text>
+<line x1="736.4444444444445" y1="192" x2="736.4444444444445" y2="670" stroke="#1b3247" stroke-width="1"/>
+<text x="736.4444444444445" y="182" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#5f7c8e" text-anchor="middle">2</text>
+<line x1="878.6666666666667" y1="192" x2="878.6666666666667" y2="670" stroke="#1b3247" stroke-width="1"/>
+<text x="878.6666666666667" y="182" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#5f7c8e" text-anchor="middle">3</text>
+<line x1="1020.8888888888889" y1="192" x2="1020.8888888888889" y2="670" stroke="#1b3247" stroke-width="1"/>
+<text x="1020.8888888888889" y="182" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#5f7c8e" text-anchor="middle">4</text>
+<text x="48" y="224" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="21" fill="#e8eef2" font-weight="400">Shenzhen Futian · handheld US</text>
+<text x="48" y="246" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="15" fill="#7f93a1">n=21,405 · 2024 · [2]</text>
+<rect x="452" y="212" width="66.8" height="26" rx="5" fill="#4d5f6d"/>
+<text x="530.8" y="233" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="24" fill="#4d5f6d" font-weight="700">0.47</text>
+<text x="48" y="284" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="21" fill="#e8eef2" font-weight="400">Rural China program · optimized US</text>
+<text x="48" y="306" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="15" fill="#7f93a1">n=1,501,753 · 2015 · [1]</text>
+<rect x="452" y="272" width="120.9" height="26" rx="5" fill="#4d5f6d"/>
+<text x="584.9" y="293" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="24" fill="#4d5f6d" font-weight="700">0.85</text>
+<rect x="32" y="322" width="1136" height="54" rx="8" fill="#ffb35c" opacity="0.09"/>
+<rect x="32" y="322" width="4" height="54" rx="2" fill="#ffb35c"/>
+<text x="48" y="344" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="21" fill="#fff2e2" font-weight="600">Shenzhen Futian · AI-ABUS</text>
+<text x="48" y="366" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="15" fill="#d8ae86">n=14,766 · 2024 · [2]</text>
+<rect x="449" y="329" width="246.4" height="32" rx="8" fill="#ffb35c" opacity="0.22"/>
+<rect x="452" y="332" width="240.4" height="26" rx="5" fill="#ffb35c" stroke="#ffe6c2" stroke-width="1"/>
+<text x="704.4" y="353" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="27" fill="#ffd9a0" font-weight="700">1.69</text>
+<text x="48" y="404" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="21" fill="#e8eef2" font-weight="400">Korea · national screening</text>
+<text x="48" y="426" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="15" fill="#7f93a1">2016 · [3]</text>
+<rect x="452" y="392" width="382.6" height="26" rx="5" fill="#3f7f9e"/>
+<text x="846.6" y="413" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="24" fill="#3f7f9e" font-weight="700">2.69</text>
+<rect x="32" y="442" width="1136" height="54" rx="8" fill="#ffb35c" opacity="0.09"/>
+<rect x="32" y="442" width="4" height="54" rx="2" fill="#ffb35c"/>
+<text x="48" y="464" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="21" fill="#fff2e2" font-weight="600">Ours · Shenzhen organized screening</text>
+<text x="48" y="486" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="15" fill="#d8ae86">n=11,703 · 2026 · iScience · [7]</text>
+<rect x="449" y="449" width="444.0" height="32" rx="8" fill="#ffb35c" opacity="0.22"/>
+<rect x="452" y="452" width="438.0" height="26" rx="5" fill="#ffb35c" stroke="#ffe6c2" stroke-width="1"/>
+<text x="902.0" y="473" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="27" fill="#ffd9a0" font-weight="700">3.08</text>
+<text x="48" y="524" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="21" fill="#e8eef2" font-weight="400">Japan J-START · mammography arm</text>
+<text x="48" y="546" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="15" fill="#7f93a1">2016 · [4]</text>
+<rect x="452" y="512" width="469.3" height="26" rx="5" fill="#3f7f9e"/>
+<text x="933.3" y="533" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="24" fill="#3f7f9e" font-weight="700">3.30</text>
+<rect x="32" y="562" width="1136" height="54" rx="8" fill="#ffb35c" opacity="0.09"/>
+<rect x="32" y="562" width="4" height="54" rx="2" fill="#ffb35c"/>
+<text x="48" y="584" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="21" fill="#fff2e2" font-weight="600">Ours · multicentre remote reading</text>
+<text x="48" y="606" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="15" fill="#d8ae86">n=10,344 · 2024 · [5]</text>
+<rect x="449" y="569" width="532.2" height="32" rx="8" fill="#ffb35c" opacity="0.22"/>
+<rect x="452" y="572" width="526.2" height="26" rx="5" fill="#ffb35c" stroke="#ffe6c2" stroke-width="1"/>
+<text x="990.2" y="593" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="27" fill="#ffd9a0" font-weight="700">3.70</text>
+<rect x="32" y="622" width="1136" height="54" rx="8" fill="#ffb35c" opacity="0.09"/>
+<rect x="32" y="622" width="4" height="54" rx="2" fill="#ffb35c"/>
+<text x="48" y="644" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="21" fill="#fff2e2" font-weight="600">Ours · 46 centres, remote reading</text>
+<text x="48" y="666" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="15" fill="#d8ae86">n=5,978 · 2024 · [6]</text>
+<rect x="449" y="629" width="574.9" height="32" rx="8" fill="#ffb35c" opacity="0.22"/>
+<rect x="452" y="632" width="568.9" height="26" rx="5" fill="#ffb35c" stroke="#ffe6c2" stroke-width="1"/>
+<text x="1032.9" y="653" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="27" fill="#ffd9a0" font-weight="700">4.00</text>
+<rect x="48" y="702" width="16" height="16" rx="3" fill="#ffb35c"/>
+<text x="72" y="716" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#a9b8c2">Our studies (highlighted)</text>
+<rect x="313" y="702" width="16" height="16" rx="3" fill="#3f7f9e"/>
+<text x="337" y="716" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#a9b8c2">Japan/Korea &amp; external AI benchmarks</text>
+<rect x="677" y="702" width="16" height="16" rx="3" fill="#4d5f6d"/>
+<text x="701" y="716" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="17" fill="#a9b8c2">Chinese prior benchmarks</text>
+<text x="48" y="746" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="14" fill="#6f8493">Sources: [1] Ma et al., Chin J Oncol 2021 · [2] Natl Med J China 2025;105(32) · [3] Korean Breast Cancer Screening Alliance 2016</text>
+<text x="48" y="768" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="14" fill="#6f8493">[4] Ohuchi et al., Lancet 2016 (J-START) · [5] Chin J Oncol 2024;46(11) · [6] Dang et al., AJR 2024</text>
+<text x="48" y="790" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="14" fill="#6f8493">[7] Sun W, et al. iScience 2026;29:118186 — AI-ABUS 3.08 vs handheld US 1.22 per 1,000 (n=11,703 / 11,435)</text>
+<text x="48" y="812" font-family="'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif" font-size="14" fill="#6f8493">Detection rates depend on age structure, first-round proportion and follow-up completeness. Amber rows = our studies.</text>
+</svg>

@@ -97,7 +97,7 @@ TEMPLATE = """<!DOCTYPE html>
         <ul>
 {highlights}
         </ul>
-        <div class="sw-links">
+{figure_html}        <div class="sw-links">
 {pills}
         </div>
       </section>
@@ -216,6 +216,19 @@ def build_page(area: dict, lang: str) -> str:
     )
 
     highlights = "\n".join(f"          <li>{h}</li>" for h in area[f"highlights_{lang_key}"])
+
+    # optional area-level figure (e.g. the ABUS detection-rate chart, generated
+    # by tools/build_figures.py). Declared per language in data/areas.json as
+    # figure_en / figure_cn; other areas simply omit the field.
+    fig = area.get(f"figure_{lang_key}")
+    if fig:
+        fig_alt = ("乳腺癌检出率对比柱状图：我们的 AI-ABUS 筛查与国内外基准" if lang == "zh"
+                   else "Bar chart of breast cancer detection rates per 1,000 women: our AI-ABUS screening vs benchmarks")
+        figure_html = (f'        <div class="card-img" style="margin:14px 0 2px">'
+                       f'<img src="../{esc(fig)}" alt="{esc(fig_alt)}"></div>\n')
+    else:
+        figure_html = ""
+
     papers = [p for p in area["papers"] if is_published(p)]
     pills = "\n".join(
         f'        <a class="badge" href="#{p["id"]}">{esc(p["pill"])}</a>'
@@ -235,7 +248,7 @@ def build_page(area: dict, lang: str) -> str:
         desc=esc(intro[:150]), nav_html=nav_html,
         lang_href=lang_href, lang_label=L["lang_switch"][0],
         kind=esc(kind), num=area["num"], intro=intro, back_label=L["back_label"],
-        overview_title=L["overview_title"], highlights=highlights, pills=pills,
+        overview_title=L["overview_title"], highlights=highlights, figure_html=figure_html, pills=pills,
         papers_eyebrow=papers_eyebrow, papers_title=L["papers_title"],
         papers_sub=L["papers_sub"], paper_cards=paper_cards,
         footer_org=footer_org, fl_pubs=fl_pubs, fl_soft=fl_soft,

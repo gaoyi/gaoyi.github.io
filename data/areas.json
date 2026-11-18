@@ -18,6 +18,8 @@
         "覆盖 46 个社区卫生中心的远程阅片前瞻性研究",
         "获国内首个该类别二类医疗器械注册证"
       ],
+      "figure_en": "images/fig-abus-cdr-en.svg",
+      "figure_cn": "images/fig-abus-cdr-cn.svg",
       "papers": [
         {"id": "isci-2026", "type": "paper", "title": "Bundled AI Supported Automated Breast Ultrasound versus Handheld Ultrasound in Organized Screening in China", "venue": "iScience", "year": 2026, "doi": "10.1016/j.isci.2026.118186", "pill": "iScience 2026",
          "bullets_en": ["Bundled AI-supported ABUS versus handheld ultrasound in organized population screening.", "Real-world evidence from China's organized screening program."],
